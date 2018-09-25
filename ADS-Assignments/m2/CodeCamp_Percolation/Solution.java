@@ -1,12 +1,27 @@
-import java.util.*;
-class Solution {
+import java.util.Scanner;
+/**
+ * class.
+ **/
+final class Solution {
+	/**
+	 constructor.
+	 **/
+	private Solution() {
+		/**
+		 constructor.
+		 **/
+	}
+	/**
+	 main function.
+	 **/
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int input = Integer.parseInt(sc.nextLine());
 		percolate obj = new percolate(input);
 		while (sc.hasNextLine()) {
 			String[] inputs = sc.nextLine().split(" ");
-			obj.open(Integer.parseInt(inputs[0]) - 1, Integer.parseInt(inputs[1]) - 1);
+			obj.open(Integer.parseInt(inputs[0]) - 1,
+				Integer.parseInt(inputs[1]) - 1);
 		}
 		System.out.println(obj.ispercolate());
 	}
