@@ -32,17 +32,17 @@ final class Solution {
  * class.
  **/
 class Percolate {
-	boolean[][] grid;
-	WeightedQuickUnionUF obj;
+	private boolean[][] grid;
+	private WeightedQuickUnionUF obj;
 	/**
 	 * int size.
 	**/
 	int size;
 	/**
-	 * @param size int.
+	 * @param size1 int.
 	 **/
-	Percolate(final int size) {
-		this.size = size;
+	Percolate(final int size1) {
+		this.size = size1;
 		grid = new boolean[size][size];
 		obj = new WeightedQuickUnionUF(size * size + 2);
 	}
