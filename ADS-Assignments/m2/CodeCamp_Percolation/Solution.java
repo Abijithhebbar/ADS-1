@@ -13,31 +13,35 @@ final class Solution {
 	}
 	/**
 	 main function.
+	 * @param args String.
 	 **/
 	public static void main(final String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int input = Integer.parseInt(sc.nextLine());
-		percolate obj = new percolate(input);
+		Percolate obj = new Percolate(input);
 		while (sc.hasNextLine()) {
 			String[] inputs = sc.nextLine().split(" ");
 			obj.open(Integer.parseInt(inputs[0]) - 1,
 				Integer.parseInt(inputs[1]) - 1);
 		}
-		System.out.println(obj.ispercolate());
+		System.out.println(obj.isPercolate());
 	}
 
 }
 /**
  * class.
  **/
-class percolate {
+class Percolate {
 	boolean[][] grid;
 	WeightedQuickUnionUF obj;
+	/**
+	 * int size.
+	**/
 	int size;
 	/**
 	 * @param size int.
 	 **/
-	percolate(final int size) {
+	Percolate(final int size) {
 		this.size = size;
 		grid = new boolean[size][size];
 		obj = new WeightedQuickUnionUF(size * size + 2);
@@ -79,7 +83,7 @@ class percolate {
 	/**
 	* @return true or false.
 	 **/
-	public boolean ispercolate() {
+	public boolean isPercolate() {
 		return obj.connected(size * size, size * size + 1);
 	}
 /**
