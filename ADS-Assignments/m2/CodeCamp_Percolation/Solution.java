@@ -32,9 +32,11 @@ final class Solution {
  * class.
  **/
 class Percolate {
-    /** grid boolean **/
+    /** grid boolean.
+    **/
     private boolean[][] grid;
-    /** object **/
+    /** object.
+    **/
     private WeightedQuickUnionUF obj;
     /**
      * int size.
