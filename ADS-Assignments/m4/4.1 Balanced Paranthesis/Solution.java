@@ -71,17 +71,19 @@ class LinkedStackOfStrings {
         /**
          char item.
          **/
-        char item;
+        private char item;
         /**
          Node object.
          **/
-        Node next;
+        private Node next;
     }
     /**
      to check if the stack is empty.
+     @return bool value.
      **/
-    public boolean isEmpty()
-    { return first == null; }
+    public boolean isEmpty() {
+        return first == null;
+    }
     /**
      used to push the item.
      * @param item char.
