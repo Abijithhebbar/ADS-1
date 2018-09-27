@@ -6,7 +6,7 @@ final class Solution {
     /**
     default constructor.
      **/
-    private Solution(){
+    private Solution() {
 
     }
     /**
@@ -59,56 +59,53 @@ final class Solution {
 /**
 Stack class.
  **/
-class LinkedStackOfStrings{
+class LinkedStackOfStrings {
     /**
      Node object first.
      **/
- private Node first = null;
- /**
-  class node for the linked list.
-  **/
- private class Node
- {
+    private Node first = null;
     /**
-     char item.
+     class node for the linked list.
      **/
- char item;
- /**
-  Node object.
-  **/
- Node next;
- }
-/**
- to check if the stack is empty.
- **/
- public boolean isEmpty()
- { return first == null; }
- /**
-  used to push the item.
-  * @param item char.
-  **/
- public void push(char item)
- {
- Node oldfirst = first;
- first = new Node();
- first.item = item;
- first.next = oldfirst;
- }
- /**
-  * used to pop the item from the stack.
-  * @return string pop
-  **/
- public char pop()
- {
- char item = first.item;
- first = first.next;
- return item;
- }
- /**
-  used to check the item on the top.
-  * @return first item.
-  **/
- public char top() {
+    private class Node {
+        /**
+         char item.
+         **/
+        char item;
+        /**
+         Node object.
+         **/
+        Node next;
+    }
+    /**
+     to check if the stack is empty.
+     **/
+    public boolean isEmpty()
+    { return first == null; }
+    /**
+     used to push the item.
+     * @param item char.
+     **/
+    public void push(final char item) {
+        Node oldfirst = first;
+        first = new Node();
+        first.item = item;
+        first.next = oldfirst;
+    }
+    /**
+     * used to pop the item from the stack.
+     * @return string pop
+     **/
+    public char pop() {
+        char item = first.item;
+        first = first.next;
+        return item;
+    }
+    /**
+     used to check the item on the top.
+     * @return first item.
+     **/
+    public char top() {
         return first.item;
     }
 }
