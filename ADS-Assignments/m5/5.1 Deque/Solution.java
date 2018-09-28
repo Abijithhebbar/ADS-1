@@ -43,7 +43,7 @@ final class Solution {
                 }
                 break;
             }
-            case "popLeft": {
+            case "popLeft":
                 if (!link.isempty()) {
                     link.removeAtStart();
                     System.out.println(link.display());
@@ -52,10 +52,10 @@ final class Solution {
                 }
 
                 break;
-            }
-            case "size": {
+            case "size":
                 System.out.println(link.size());
-            }
+            default:
+                break;
             }
 
         }
