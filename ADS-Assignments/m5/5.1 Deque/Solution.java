@@ -144,22 +144,22 @@ final class Solution {
                 break;
             }
             case "popRight": {
-                if (link.isempty()){
-                link.removeAtEnd();
-                System.out.println(link.display());
-            } else {
-                System.out.println("Deck is empty");
-            }
+                if (!link.isempty()) {
+                    link.removeAtEnd();
+                    System.out.println(link.display());
+                } else {
+                    System.out.println("Deck is empty");
+                }
                 break;
-
             }
             case "popLeft": {
-                if (link.isempty()){
-                link.removeAtStart();
-                System.out.println(link.display());
-            } else {
-                System.out.println("Deck is empty");
-            }
+                if (!link.isempty()) {
+                    link.removeAtStart();
+                    System.out.println(link.display());
+                } else {
+                    System.out.println("Deck is empty");
+                }
+
                 break;
             }
             case "size": {
