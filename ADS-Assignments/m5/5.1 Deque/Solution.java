@@ -24,17 +24,15 @@ final class Solution {
         for (int i = 0; i < n; i++) {
             String[] line = sc.nextLine().split(" ");
             switch (line[0]) {
-            case "pushLeft": {
+            case "pushLeft":
                 link.addAtStart(Integer.parseInt(line[1]));
                 System.out.println(link.display());
                 break;
-            }
-            case "pushRight": {
+            case "pushRight":
                 link.addAtEnd(Integer.parseInt(line[1]));
                 System.out.println(link.display());
                 break;
-            }
-            case "popRight": {
+            case "popRight":
                 if (!link.isempty()) {
                     link.removeAtEnd();
                     System.out.println(link.display());
@@ -42,7 +40,6 @@ final class Solution {
                     System.out.println("Deck is empty");
                 }
                 break;
-            }
             case "popLeft":
                 if (!link.isempty()) {
                     link.removeAtStart();
