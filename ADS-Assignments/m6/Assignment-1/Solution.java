@@ -22,9 +22,9 @@ return s;
         // LinkedList add1 = new LinkedList();
         // add.push(list1);
         // add1.push(list2);
-        Double a = Double.parseDouble(list1);
-        Double b = Double.parseDouble(list2);
-        Double c = a + b;
+        long a = Long.parseLong(list1);
+        long b = Long.parseLong(list2);
+        long c = a + b;
         String result = c + "";
         return result;
 
