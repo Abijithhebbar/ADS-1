@@ -1,7 +1,14 @@
 import java.util.Scanner;
+/**
+ * class to add large numbers.
+ **/
 class AddLargeNumbers {
-
-    public static String numberToDigits(String number) {
+/**
+ * numbers to digits string.
+ * @param number string.
+ * @return list output in the form of string.
+ */
+    public static String numberToDigits(final String number) {
         LinkedList newlist = new LinkedList();
         // LinkedList list = new LinkedList();
         newlist.push(number);
@@ -11,13 +18,22 @@ class AddLargeNumbers {
         // System.out.println(newlist.displayAll());
         return newlist.displayAll();
     }
-
-    public static String digitsToNumber(String list) {
+/**
+ * digits to numbers.
+ * @param list string.
+ * @return string.
+ */
+    public static String digitsToNumber(final String list) {
         String s = "";
         return s;
     }
-
-    public static String addLargeNumbers(String list1, String list2) {
+/**
+ * add large numbers method.
+ * @param list1 String.
+ * @param list2 String.
+ * @return sum of the numbers.
+ **/
+    public static String addLargeNumbers(final String list1, final String list2) {
         // LinkedList add = new LinkedList();
         // LinkedList add1 = new LinkedList();
         // add.push(list1);
@@ -45,9 +61,21 @@ class AddLargeNumbers {
 
     }
 }
+/**
+ * solution class.
+ **/
+final class Solution {
+    /**
+     default constructor.
+     **/
+     private Solution() {
 
-public class Solution {
-    public static void main(String[] args) {
+     }
+     /**
+      * main method.
+      * @param args String.
+      **/
+    public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         String input = sc.nextLine();
         String p = sc.nextLine();
@@ -66,6 +94,8 @@ public class Solution {
             String result = AddLargeNumbers.addLargeNumbers(pDigits, qDigits);
             System.out.println(result);
             break;
+        default :
+        break;
         }
     }
 
