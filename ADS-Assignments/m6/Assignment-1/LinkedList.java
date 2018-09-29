@@ -1,4 +1,5 @@
 class LinkedList {
+	private int size = 0;
 	LinkedList() {
 	}
 	Node first = null;
@@ -18,10 +19,12 @@ class LinkedList {
 		Node nextAddress = new Node(item);
 		nextAddress.next = first;
 		first = nextAddress;
+		size++;
 	}
 	public int pop() {
 		int output = first.item;
 		first = first.next;
+		size--;
 		return output;
 	}
 
@@ -36,6 +39,9 @@ class LinkedList {
 			head = head.next;
 		}
 		return storage;
+	}
+	public int size() {
+		return size;
 	}
 
 }
