@@ -51,7 +51,7 @@ final class AddLargeNumbers {
             while (!list2.isEmpty()) {
                 a = list1.pop() + list2.pop() + b;
                 // c = 0;
-                if (list1.size() != count - 1 || list2.size() != count -1) {
+                if (list1.size() != count - 1 || list2.size() != count - 1) {
                   if (a > nine) {
                     c = a % ten;
                     b = a / ten;
