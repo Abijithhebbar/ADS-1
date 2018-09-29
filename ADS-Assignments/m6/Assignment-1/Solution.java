@@ -38,7 +38,7 @@ class AddLargeNumbers {
                 }
                 else {
                     // a = a + b;
-                    System.out.println(a);
+                    // System.out.print(a);
                     result.push(a);                }
 
             }
