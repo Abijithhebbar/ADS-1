@@ -12,14 +12,23 @@ class AddLargeNumbers {
         return newlist.displayAll();
     }
 
-    public static String digitsToNumber(LinkedList list) {
+    public static String digitsToNumber(String list) {
 String s = "";
 return s;
     }
 
-    public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {
-LinkedList newli = new LinkedList();
-return newli;
+    public static String addLargeNumbers(String list1, String list2) {
+        // LinkedList add = new LinkedList();
+        // LinkedList add1 = new LinkedList();
+        // add.push(list1);
+        // add1.push(list2);
+        Double a = Double.parseDouble(list1);
+        Double b = Double.parseDouble(list2);
+        Double c = a + b;
+        String result = c + "";
+        return result;
+
+
     }
 }
 
@@ -38,11 +47,11 @@ public class Solution {
                 break;
 
             case "addLargeNumbers":
-                // pDigits = AddLargeNumbers.numberToDigits(p);
-                // qDigits = AddLargeNumbers.numberToDigits(q);
-                // LinkedList result = AddLargeNumbers.addLargeNumbers(pDigits, qDigits);
-                // System.out.println(AddLargeNumbers.digitsToNumber(result));
-                // break;
+                pDigits = AddLargeNumbers.numberToDigits(p);
+                qDigits = AddLargeNumbers.numberToDigits(q);
+                String result = AddLargeNumbers.addLargeNumbers(pDigits, qDigits);
+                System.out.println(result);
+                break;
         }
     }
 
