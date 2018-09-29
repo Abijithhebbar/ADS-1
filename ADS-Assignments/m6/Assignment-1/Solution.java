@@ -16,12 +16,25 @@ class AddLargeNumbers {
 
     public static LinkedList addLargeNumbers(final LinkedList list1, final LinkedList list2) {
         LinkedList result = new LinkedList();
-        int a;
-        while (list1 != null) {
+        int a, c, b = 0;
+        // a = list1.pop();
+        // result.push(a);
+        // int b = list2.pop();
+        // result.push(b);
+        while (!list1.isEmpty()) {
             a = 0;
-            while (list2 != null) {
+            while (!list2.isEmpty()) {
                 a = list1.pop() + list2.pop();
-                result.push(a);
+                if (a > 9) {
+                    c = a % 10;
+                    result.push(c);
+                    c = 0;
+                    b = b / 10;
+                }
+                else {
+                    a = a + b;
+                    result.push(a);                }
+
             }
         }
         return result;
