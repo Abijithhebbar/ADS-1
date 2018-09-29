@@ -13,8 +13,8 @@ class AddLargeNumbers {
     }
 
     public static String digitsToNumber(String list) {
-String s = "";
-return s;
+        String s = "";
+        return s;
     }
 
     public static String addLargeNumbers(String list1, String list2) {
@@ -38,20 +38,20 @@ public class Solution {
         String input = sc.nextLine();
         String p = sc.nextLine();
         String q = sc.nextLine();
-        switch(input){
-            case "numberToDigits":
-                String pDigits = AddLargeNumbers.numberToDigits(p);
-                String qDigits = AddLargeNumbers.numberToDigits(q);
-                System.out.println(AddLargeNumbers.numberToDigits(pDigits));
-                System.out.println(AddLargeNumbers.numberToDigits(qDigits));
-                break;
+        switch (input) {
+        case "numberToDigits":
+            String pDigits = AddLargeNumbers.numberToDigits(p);
+            String qDigits = AddLargeNumbers.numberToDigits(q);
+            System.out.println(AddLargeNumbers.numberToDigits(pDigits));
+            System.out.println(AddLargeNumbers.numberToDigits(qDigits));
+            break;
 
-            case "addLargeNumbers":
-                pDigits = AddLargeNumbers.numberToDigits(p);
-                qDigits = AddLargeNumbers.numberToDigits(q);
-                String result = AddLargeNumbers.addLargeNumbers(pDigits, qDigits);
-                System.out.println(result);
-                break;
+        case "addLargeNumbers":
+            pDigits = AddLargeNumbers.numberToDigits(p);
+            qDigits = AddLargeNumbers.numberToDigits(q);
+            String result = AddLargeNumbers.addLargeNumbers(pDigits, qDigits);
+            System.out.println(result);
+            break;
         }
     }
 
