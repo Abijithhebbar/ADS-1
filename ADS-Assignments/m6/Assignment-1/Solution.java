@@ -2,7 +2,13 @@ import java.util.Scanner;
 /**
  * class to add large numbers.
  **/
-class AddLargeNumbers {
+final class AddLargeNumbers {
+    /**
+     * default constructor.
+     * */
+    private AddLargeNumbers() {
+
+    }
 /**
  * numbers to digits string.
  * @param number string.
@@ -33,7 +39,8 @@ class AddLargeNumbers {
  * @param list2 String.
  * @return sum of the numbers.
  **/
-    public static String addLargeNumbers(final String list1, final String list2) {
+    public static String addLargeNumbers(final String list1,
+        final String list2) {
         // LinkedList add = new LinkedList();
         // LinkedList add1 = new LinkedList();
         // add.push(list1);
