@@ -30,28 +30,30 @@ final class AddLargeNumbers {
     public static String digitsToNumber(final LinkedList list) {
         return list.toString();
     }
-/**
+/**.
  add large numbers
  * @param list1 obj.
  * @param list2 obj.
  *
  * @return object.
  **/
-    public static LinkedList addLargeNumbers(final LinkedList list1, final LinkedList list2) {
+    public static LinkedList addLargeNumbers(final LinkedList list1,
+     final LinkedList list2) {
         LinkedList result = new LinkedList();
         int a, c = 0, b = 0;
         // a = list1.pop();
         // result.push(a);
         // int b = list2.pop();
         // result.push(b);
+        final int ten = 10, nine = 9;
         while (!list1.isEmpty()) {
             // a = 0;
             while (!list2.isEmpty()) {
                 a = list1.pop() + list2.pop() + b;
                 // c = 0;
-                if (a > 9) {
-                    c = a % 10;
-                    b = a / 10;
+                if (a > nine) {
+                    c = a % ten;
+                    b = a / ten;
                     // System.out.println(a);
                     // System.out.println(b);
                     // System.out.println(c);
