@@ -1,0 +1,1 @@
+In this operation we reverse the stack elements.
