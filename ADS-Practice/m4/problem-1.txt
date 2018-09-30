@@ -1,0 +1,8 @@
+Given Input it was - the best - of times --- it was - the --
+For every - one item is popped from the stack so:
+it, was is pushed then was is popped out.
+the, best are pushed then best is popped.
+of, times are pushed, times, of, the are popped out.
+it, was are pushed, then was is popped out.
+the is pushed, then the, it is popped out.
+So the result in the stack is : it.
