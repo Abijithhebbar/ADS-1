@@ -102,7 +102,7 @@ class LinkedList {
                 s += temp.item + ", ";
                 temp = temp.next;
             }
-            return s.substring(0, s.length());
+            return s.substring(0, s.length() - 1);
         }
         return "Steque is empty.";
     }
