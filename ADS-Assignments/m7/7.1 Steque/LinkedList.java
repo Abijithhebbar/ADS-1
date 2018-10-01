@@ -96,13 +96,13 @@ class LinkedList {
     }
     public String displayAll() {
         if (length != 0) {
-            String s = "[";
+            String s = "";
             Node temp = first;
             while (temp != null) {
                 s += temp.item + ", ";
                 temp = temp.next;
             }
-            return s.substring(0, s.length() - 2) + "]";
+            return s.substring(0, s.length()-2);
         }
         return "Steque is empty.";
     }
