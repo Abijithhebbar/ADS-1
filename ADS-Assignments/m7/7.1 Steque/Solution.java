@@ -40,7 +40,7 @@ final class Solution {
                     default:
                     break;
                 }
-                if (check[0].equals("")){
+                if (check[0].equals("")) {
                     System.out.println();
                     break;
                 }
