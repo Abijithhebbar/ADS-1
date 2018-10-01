@@ -95,17 +95,15 @@ class LinkedList {
         return length;
     }
     public String displayAll() {
-        if (length == 1) {
-            String s = "";
-            Node temp = first;
-            s = temp.item +"";
-            return s;
-        } else if (length != 0) {
+        if (length != 0) {
             String s = "";
             Node temp = first;
             while (temp != null) {
                 s += temp.item + ", ";
                 temp = temp.next;
+            }
+            if (s.length() == 1) {
+                return s;
             }
             return s.substring(0, s.length() - 2);
         }
