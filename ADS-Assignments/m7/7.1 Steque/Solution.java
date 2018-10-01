@@ -11,6 +11,13 @@ final class Solution {
     }
     /**
      * Main function.
+     * Here we create an object for the Linked List class.
+     * The methods of PushAtStart with the parameter item is passed to push
+     * at the start.
+     * The methods of PushAtEnd with the parameter item is passed to push
+     * at the End.
+     * The pop method is used to pop the item from the stack.
+     * The displayAll method is used to display the elements in the Stack.
      * @param args String.
      **/
     public static void main(final String[] args) {
