@@ -27,18 +27,21 @@ final class Solution {
 				switch(check[0]) {
 					case "push":
 					link.pushAtStart(Integer.parseInt(check[1]));
+					link.displayAll();
 					break;
 					case "pop":
 					link.popAtStart();
+					link.displayAll();
 					break;
 					case "enqueue":
 					link.pushAtEnd(Integer.parseInt(check[1]));
+					link.displayAll();
 					break;
 					default:
 					break;
 				}
 			}
-			link.displayAll();
+			// link.displayAll();
 			}
 		}
 	}

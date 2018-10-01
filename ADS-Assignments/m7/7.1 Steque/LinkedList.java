@@ -104,6 +104,6 @@ class LinkedList {
             }
             return s.substring(0, s.length() - 2) + "]";
         }
-        return "[]";
+        return "Steque is empty.";
     }
 }
