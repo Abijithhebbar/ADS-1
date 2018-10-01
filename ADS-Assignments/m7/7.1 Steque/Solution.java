@@ -14,10 +14,10 @@ final class Solution {
      * @param args String.
      **/
     public static void main(final String[] args) {
-        LinkedList link = new LinkedList();
         Scanner sc = new Scanner(System.in);
         int n = Integer.parseInt(sc.nextLine());
         for (int i = 0; i < n; i++) {
+            LinkedList link = new LinkedList();
             while (sc.hasNext()) {
                 String s = sc.nextLine();
                 if (s == "\n") {
@@ -40,13 +40,15 @@ final class Solution {
                     default:
                     break;
                 }
+                if (check[0].equals("")){
+                    System.out.println();
+                    break;
+                }
             }
             // link.displayAll();
             }
-            if (n > 1) {
-                System.out.println();
+
             }
         }
     }
 
-}
