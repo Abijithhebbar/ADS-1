@@ -41,12 +41,11 @@ final class Solution {
                     break;
                 }
             }
-            if (n > 1) {
-                System.out.println();
-            }
             // link.displayAll();
             }
-
+if (n > 1) {
+                System.out.println();
+            }
         }
     }
 
