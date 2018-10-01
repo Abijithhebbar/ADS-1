@@ -18,7 +18,7 @@ final class Solution {
         Scanner sc = new Scanner(System.in);
         int n = Integer.parseInt(sc.nextLine());
         for (int i = 0; i < n; i++) {
-            while (sc.hasNextLine()) {
+            while (sc.hasNext()) {
                 String s = sc.nextLine();
                 if (s == "\n") {
                     break; //return;
@@ -43,7 +43,7 @@ final class Solution {
             }
             // link.displayAll();
             }
-if (n > 1) {
+            if (n > 1) {
                 System.out.println();
             }
         }
