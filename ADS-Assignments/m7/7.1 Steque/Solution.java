@@ -43,6 +43,9 @@ final class Solution {
             }
             // link.displayAll();
             }
+            if (n > 1) {
+                System.out.println();
+            }
         }
     }
 
