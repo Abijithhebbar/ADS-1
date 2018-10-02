@@ -3,16 +3,15 @@
  */
 public class Table {
     /**
-     * Constructs the object.
+     * default constructor.
      */
     public Table() {
 
     }
     /**
      * Insertion Sort function for array.
-     * Omega(N)
-     * Theta(N^2)
-     * O(N^2)
+     * complexity is N^2 for big O.
+     * for Theta it is N^2.
      * @param      array  The array
      * @param      size   The size
      */
@@ -48,7 +47,7 @@ public class Table {
     public void swap(Comparable[] a, int ind1, int ind2) {
         Comparable temp = a[ind1];
         a[ind1] = a[ind2];
-        // a[ind2] = temp;
+        a[ind2] = temp;
     }
     /**
      * Finds the Leaderboard and returns leaderboard string.
