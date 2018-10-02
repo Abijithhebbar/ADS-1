@@ -20,9 +20,9 @@ public class Table {
         int n = size;
         for (int i = 0; i < n; i++) {
             for (int j = i; j > 0; j--) {
-                // if (more(array, j, j - 1)) {
-                //     swap(array, j, j - 1);
-                // }
+                if (more(array, j, j - 1)) {
+                    swap(array, j, j - 1);
+                }
             }
         }
     }
@@ -48,7 +48,7 @@ public class Table {
     public void swap(Comparable[] a, int ind1, int ind2) {
         Comparable temp = a[ind1];
         a[ind1] = a[ind2];
-        a[ind2] = temp;
+        // a[ind2] = temp;
     }
     /**
      * Finds the Leaderboard and returns leaderboard string.
