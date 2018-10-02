@@ -1,19 +1,16 @@
-/**
- * Class for team.
- */
 public class Team implements Comparable<Team> {
     private String team;
     private Integer wins;
     private Integer losses;
     private Integer draws;
     /**
-     * default constructor.
+     * Constructs the object.
      */
     public Team() {
 
-   }
+    }
     /**
-     * Constructor.
+     * Constructs the object.
      *
      * @param      name  The name
      * @param      win   The window

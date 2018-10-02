@@ -3,24 +3,25 @@
  */
 public class Table {
     /**
-     * default constructor.
+     * Constructs the object.
      */
     public Table() {
 
     }
     /**
-     * Insertion Sort function for array.
-     * complexity is N^2 for big O.
-     * for Theta it is N^2.
+     * Selection Sort function for array.
+     * complexity for the big O is N^2.
+     * complexity for omega is N^2.
      * @param      array  The array
      * @param      size   The size
      */
     public void Sort(Comparable[] array, int size) {
         int n = size;
         for (int i = 0; i < n; i++) {
-            for (int j = i; j > 0; j--) {
-                if (more(array, j, j - 1)) {
-                    swap(array, j, j - 1);
+            int min = i;
+            for (int j = i + 1; j < n; j++) {
+                if (less(array, i, j)) {
+                    swap(array, j, min);
                 }
             }
         }
@@ -34,8 +35,8 @@ public class Table {
      *
      * @return     { description_of_the_return_value }
      */
-    public boolean more(Comparable[] arr, int ind1, int ind2) {
-        return arr[ind1].compareTo(arr[ind2]) > 0;
+    public boolean less(Comparable[] arr, int ind1, int ind2) {
+        return arr[ind1].compareTo(arr[ind2]) < 0;
     }
     /**
      * Swaps the values in the array.
