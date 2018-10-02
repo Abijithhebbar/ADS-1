@@ -76,11 +76,10 @@ public class Team implements Comparable<Team> {
             return -1;
         } else if (this.getDraws() > that.getDraws()) {
             return 1;
-        // } else if (this.getDraws() < that.getDraws()) {
-        //     return -1;
-        // } else {
-        //     return 0;
+        } else if (this.getDraws() < that.getDraws()) {
+            return -1;
+        } else {
+            return 0;
         }
-        return 0;
     }
 }
