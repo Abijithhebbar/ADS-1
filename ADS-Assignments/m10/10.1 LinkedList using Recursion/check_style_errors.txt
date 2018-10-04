@@ -1,0 +1,17 @@
+Starting audit...
+[ERROR] D:\ADS-1\ADS-Assignments\m10\10.1 LinkedList using Recursion\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] D:\ADS-1\ADS-Assignments\m10\10.1 LinkedList using Recursion\Solution.java:5:21: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] D:\ADS-1\ADS-Assignments\m10\10.1 LinkedList using Recursion\Solution.java:20:14: 'while' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] D:\ADS-1\ADS-Assignments\m10\10.1 LinkedList using Recursion\Solution.java:20:32: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] D:\ADS-1\ADS-Assignments\m10\10.1 LinkedList using Recursion\Solution.java:22: switch without "default" clause. [MissingSwitchDefault]
+[ERROR] D:\ADS-1\ADS-Assignments\m10\10.1 LinkedList using Recursion\Solution.java:24:20: 'try' is not followed by whitespace. [WhitespaceAround]
+[ERROR] D:\ADS-1\ADS-Assignments\m10\10.1 LinkedList using Recursion\Solution.java:24:20: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] D:\ADS-1\ADS-Assignments\m10\10.1 LinkedList using Recursion\Solution.java:25: Line is longer than 80 characters (found 82). [LineLength]
+[ERROR] D:\ADS-1\ADS-Assignments\m10\10.1 LinkedList using Recursion\Solution.java:27:17: '}' at column 17 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] D:\ADS-1\ADS-Assignments\m10\10.1 LinkedList using Recursion\Solution.java:35:20: 'try' is not followed by whitespace. [WhitespaceAround]
+[ERROR] D:\ADS-1\ADS-Assignments\m10\10.1 LinkedList using Recursion\Solution.java:35:20: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] D:\ADS-1\ADS-Assignments\m10\10.1 LinkedList using Recursion\Solution.java:38:17: '}' at column 17 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] D:\ADS-1\ADS-Assignments\m10\10.1 LinkedList using Recursion\Solution.java:40:22: 'catch' is not followed by whitespace. [WhitespaceAround]
+[ERROR] D:\ADS-1\ADS-Assignments\m10\10.1 LinkedList using Recursion\Solution.java:40:35: '{' is not preceded with whitespace. [WhitespaceAround]
+Audit done.
+Checkstyle ends with 14 errors.
