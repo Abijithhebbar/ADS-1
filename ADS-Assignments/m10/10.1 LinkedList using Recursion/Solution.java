@@ -22,7 +22,8 @@ final class Solution {
             switch (values[0]) {
             case "insertAt":
                 try {
-                    ll.insertAt(Integer.parseInt(values[1]), new Node(values[2]));
+                    ll.insertAt(Integer.parseInt(values[1]),
+                        new Node(values[2]));
                     ll.display();
                 }
 
@@ -40,6 +41,8 @@ final class Solution {
                 catch (Exception e) {
                     System.out.println("No elements to reverse.");
                 }
+                break;
+                default:
                 break;
 
             }
