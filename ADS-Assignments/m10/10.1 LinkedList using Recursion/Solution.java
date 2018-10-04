@@ -2,7 +2,7 @@ import java.util.Scanner;
 /**
  Solution class.
  **/
-final class Solution{
+final class Solution {
     /**
      default constructor.
      **/
@@ -17,13 +17,13 @@ final class Solution{
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         LinkedList ll = new LinkedList();
-        while(sc.hasNextLine()){
+        while (sc.hasNextLine()) {
             String[] values = sc.nextLine().split(" ");
             switch (values[0]) {
-                case "insertAt":
-                try{
+            case "insertAt":
+                try {
                     ll.insertAt(Integer.parseInt(values[1]), new Node(values[2]));
-                ll.display();
+                    ll.display();
                 }
 
                 catch (Exception e) {
@@ -31,13 +31,13 @@ final class Solution{
 
                 }
                 break;
-                case "reverse":
-                try{
+            case "reverse":
+                try {
                     ll.reverse();
-                ll.display();
+                    ll.display();
                 }
 
-                catch(Exception e){
+                catch (Exception e) {
                     System.out.println("No elements to reverse.");
                 }
                 break;
