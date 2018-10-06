@@ -16,7 +16,7 @@ public class Table {
      * @param      array  The array
      * @param      size   The size
      */
-    public void Sort(Comparable[] array, int size) {
+    public void Sort(Comparable[] array, int size, int openSeats) {
         // int n = size;
         // for (int i = 0; i < n; i++) {
         //     int min = i;
@@ -30,6 +30,12 @@ public class Table {
         for (int i = array.length - 1; i >= 0; i--) {
             System.out.println(array[i]);
         }
+        int n = array.length - 1;
+        System.out.println();
+        for (int i = array.length - 1; i >= (n - openSeats); i--) {
+            System.out.println(array[i]);
+        }
+
         // System.out.println(array[0]);
         // System.out.println("abcder");
         // for (int i = 0; i < n; i++) {
@@ -68,10 +74,10 @@ public class Table {
      *
      * @return     String with team names.
      */
-    public String leaderboard(Comparable[] array, int size) {
-        Sort(array, size);
-        String s = "";
-        return s;
+    public void leaderboard(Comparable[] array, int size, int openSeats) {
+        Sort(array, size, openSeats);
+        // String s = "";
+        // return s;
         // for (int i = 0; i < size; i++) {
         //     s += array[i].toString() + ",";
         // }

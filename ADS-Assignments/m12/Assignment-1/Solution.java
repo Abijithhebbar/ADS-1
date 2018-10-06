@@ -38,7 +38,7 @@ import java.util.Scanner;
             // line[six]);
             teams[i] = new Team(lines);
         }
-        System.out.println(t.leaderboard(teams, size));
+        t.leaderboard(teams, size, openSeats);
 
  	}
  }
