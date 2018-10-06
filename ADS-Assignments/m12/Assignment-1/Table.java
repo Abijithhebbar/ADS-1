@@ -1,3 +1,4 @@
+import java.util.Arrays;
 /**
  * Class for table.
  */
@@ -16,14 +17,24 @@ public class Table {
      * @param      size   The size
      */
     public void Sort(Comparable[] array, int size) {
-        int n = size;
-        for (int i = 0; i < n; i++) {
-            for (int j = i; j > 0; j--) {
-                if (more(array, j, j - 1)) {
-                    swap(array, j, j - 1);
-                }
-            }
+        // int n = size;
+        // for (int i = 0; i < n; i++) {
+        //     int min = i;
+        //     for (int j = i + 1; j < n; j++) {
+        //         if (more(array, i, j)) {
+        //             swap(array, j, min);
+        //         }
+        //     }
+        // }
+        Arrays.sort(array);
+        for (int i = 0; i < array.length; i++) {
+            System.out.println(array[i]);
         }
+        // System.out.println(array[0]);
+        // System.out.println("abcder");
+        // for (int i = 0; i < n; i++) {
+        //     System.out.println(array[i]);
+        // }
     }
     /**
      * Finds which value is lower.
@@ -60,9 +71,10 @@ public class Table {
     public String leaderboard(Comparable[] array, int size) {
         Sort(array, size);
         String s = "";
-        for (int i = 0; i < size; i++) {
-            s += array[i].toString() + ",";
-        }
-        return s.substring(0, s.length());
+        return s;
+        // for (int i = 0; i < size; i++) {
+        //     s += array[i].toString() + ",";
+        // }
+        // return s.substring(0, s.length());
     }
 }
