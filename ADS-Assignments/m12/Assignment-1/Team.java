@@ -2,18 +2,42 @@
  * Class for team.
  */
 public class Team implements Comparable<Team> {
+    /** input.
+    **/
     private String[] input = new String[7];
+    /** name.
+    **/
     private String name;
+    /** dateof birth.
+    **/
     private String dateOfBirth;
+    /** marks1.
+    **/
     private Integer marks1;
+    /** marks2.
+    **/
     private Integer marks2;
+    /** marks3.
+    **/
     private Integer marks3;
+    /** finalmarks.
+    **/
     private Integer finalMarks;
+    /** cato.
+    **/
     private String cato;
+    /** dob.
+    **/
     private String[] dob = new String[3];
-    private int day;
-    private int month;
-    private int year;
+    /** day.
+    **/
+    private Integer day;
+    /** month.
+    **/
+    private Integer month;
+    /** year.
+    **/
+    private Integer year;
 
 
     /**
