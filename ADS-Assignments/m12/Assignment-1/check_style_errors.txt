@@ -1,13 +1,12 @@
 Starting audit...
-[ERROR] D:\ADS-1\ADS-Assignments\m12\Assignment-1\Team.java:7:41: '7' is a magic number. [MagicNumber]
-[ERROR] D:\ADS-1\ADS-Assignments\m12\Assignment-1\Team.java:31:39: '3' is a magic number. [MagicNumber]
-[ERROR] D:\ADS-1\ADS-Assignments\m12\Assignment-1\Team.java:52: Unused Javadoc tag. [JavadocMethod]
-[ERROR] D:\ADS-1\ADS-Assignments\m12\Assignment-1\Team.java:54:17: Parameter inp should be final. [FinalParameters]
-[ERROR] D:\ADS-1\ADS-Assignments\m12\Assignment-1\Team.java:59:46: '3' is a magic number. [MagicNumber]
-[ERROR] D:\ADS-1\ADS-Assignments\m12\Assignment-1\Team.java:60:46: '4' is a magic number. [MagicNumber]
-[ERROR] D:\ADS-1\ADS-Assignments\m12\Assignment-1\Team.java:61:50: '5' is a magic number. [MagicNumber]
-[ERROR] D:\ADS-1\ADS-Assignments\m12\Assignment-1\Team.java:62:27: '6' is a magic number. [MagicNumber]
-[ERROR] D:\ADS-1\ADS-Assignments\m12\Assignment-1\Team.java:123:26: Parameter that should be final. [FinalParameters]
-[ERROR] D:\ADS-1\ADS-Assignments\m12\Assignment-1\Team.java:137:39: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] D:\ADS-1\ADS-Assignments\m12\Assignment-1\StudentData.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] D:\ADS-1\ADS-Assignments\m12\Assignment-1\StudentData.java:1: Missing a Javadoc comment. [JavadocType]
+[ERROR] D:\ADS-1\ADS-Assignments\m12\Assignment-1\StudentData.java:5:19: Variable 'studentName' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] D:\ADS-1\ADS-Assignments\m12\Assignment-1\StudentData.java:9:19: Variable 'dateOfBirth' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] D:\ADS-1\ADS-Assignments\m12\Assignment-1\StudentData.java:13:16: Variable 'marks1' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] D:\ADS-1\ADS-Assignments\m12\Assignment-1\StudentData.java:17:16: Variable 'marks2' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] D:\ADS-1\ADS-Assignments\m12\Assignment-1\StudentData.java:21:16: Variable 'marks3' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] D:\ADS-1\ADS-Assignments\m12\Assignment-1\StudentData.java:25:16: Variable 'totalMarks' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] D:\ADS-1\ADS-Assignments\m12\Assignment-1\StudentData.java:29:19: Variable 'cato' must be private and have accessor methods. [VisibilityModifier]
 Audit done.
-Checkstyle ends with 10 errors.
+Checkstyle ends with 9 errors.
