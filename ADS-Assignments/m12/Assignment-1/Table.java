@@ -27,7 +27,7 @@ public class Table {
         //     }
         // }
         Arrays.sort(array);
-        for (int i = 0; i < array.length; i++) {
+        for (int i = array.length - 1; i >= 0; i--) {
             System.out.println(array[i]);
         }
         // System.out.println(array[0]);
