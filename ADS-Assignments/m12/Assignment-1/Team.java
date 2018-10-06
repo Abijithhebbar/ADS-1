@@ -44,7 +44,8 @@ public class Team implements Comparable<Team> {
      * @return     String representation of the object.
      */
     public String toString() {
-        return this.name;
+        String fi = finalMarks + "";
+        return this.name + "," + fi + "," + this.cato;
     }
     public Integer year() {
         return this.year;
