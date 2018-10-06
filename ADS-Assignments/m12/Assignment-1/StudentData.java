@@ -1,3 +1,4 @@
+/** class StudentData **/
 class StudentData implements Comparable<StudentData> {
     /**
     * Student name.
