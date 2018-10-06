@@ -22,7 +22,11 @@ public class Team implements Comparable<Team> {
     public Team() {
 
    }
-
+/**
+ constructor.
+ * @param inp String type.
+ * @return variables.
+ */
     public Team(String inp) {
         this.input = inp.split(",");
         this.name = input[0];
@@ -30,7 +34,7 @@ public class Team implements Comparable<Team> {
         this.marks1 = Integer.parseInt(input[2]);
         this.marks2 = Integer.parseInt(input[3]);
         this.marks3 = Integer.parseInt(input[4]);
-        this. finalMarks = Integer.parseInt(input[5]);
+        this.finalMarks = Integer.parseInt(input[5]);
         this.cato = input[6];
         dob = dateOfBirth.split("-");
         this.day = Integer.parseInt(dob[0]);
@@ -47,12 +51,21 @@ public class Team implements Comparable<Team> {
         String fi = finalMarks + "";
         return this.name + "," + fi + "," + this.cato;
     }
+    /**
+     * @return year.
+     */
     public Integer year() {
         return this.year;
     }
+    /**
+     * @return month.
+     */
     public Integer month() {
         return this.month;
     }
+    /**
+     * @return day.
+     */
     public Integer day() {
         return this.day;
     }
@@ -64,11 +77,15 @@ public class Team implements Comparable<Team> {
     public Integer getHighesttotal() {
         return this.finalMarks;
     }
-
+/**
+ * @return highest marks.
+ */
     public Integer highestmarks3() {
         return this.marks3;
     }
-
+/**
+  * @return highest marks.
+ */
     public Integer highestmarks2() {
         return this.marks2;
     }
