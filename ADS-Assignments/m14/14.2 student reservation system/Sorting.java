@@ -1,3 +1,4 @@
+import java.util.*;
 class Sorting {
     /**
     *exchange method is used to exchange the values after there are sorted.
@@ -59,6 +60,7 @@ class Sorting {
     */
     public static void mertiList(final Studentinfo[] a, int seatAvailable, int openCat,
         int bcCat, int scCat, int stCat) {
+        Collections.reverse(Arrays.asList(a));
         for (int i = 0; i < a.length && seatAvailable > 0; i++) {
             if (openCat > 0) {
                 System.out.println(a[i].studentName + ","
@@ -93,7 +95,8 @@ class Sorting {
     *@param a Student data type.
     */
     public static void toString(final Studentinfo[] a) {
-        for (int i = a.length - 1; i < 0; i++) {
+        Collections.reverse(Arrays.asList(a));
+        for (int i = 0; i < a.length; i++) {
             System.out.println(a[i].studentName + ","
                 + a[i].totalMarks + ","
                 + a[i].cato);
