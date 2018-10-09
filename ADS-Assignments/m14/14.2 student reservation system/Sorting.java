@@ -75,24 +75,24 @@ class Sorting {
                 openCat--;
             }
         }
-            for (int j = seatAvailable; j < a.length; j++) {
-                if (a[j].cato.equals("BC")
-                       || a[j].cato.equals("SC")
-                       || a[j].cato.equals("ST")) {
-                if (a[j].cato.equals("BC") && bcCat > 0) {
-                    System.out.println(a[j].studentName + ","
-                                       + a[j].totalMarks + ","
-                                       + a[j].cato);
+            for (int i = seatAvailable; i < a.length; i++) {
+                if (a[i].cato.equals("BC")
+                       || a[i].cato.equals("SC")
+                       || a[i].cato.equals("ST")) {
+                if (a[i].cato.equals("BC") && bcCat > 0) {
+                    System.out.println(a[i].studentName + ","
+                                       + a[i].totalMarks + ","
+                                       + a[i].cato);
                     bcCat--;
-                } else if (a[j].cato.equals("SC") && scCat > 0) {
-                    System.out.println(a[j].studentName + ","
-                                       + a[j].totalMarks + ","
-                                       + a[j].cato);
+                } else if (a[i].cato.equals("SC") && scCat > 0) {
+                    System.out.println(a[i].studentName + ","
+                                       + a[i].totalMarks + ","
+                                       + a[i].cato);
                     scCat--;
-                } else if (a[j].cato.equals("ST") && stCat > 0) {
-                    System.out.println(a[j].studentName + ","
-                                       + a[j].totalMarks + ","
-                                       + a[j].cato);
+                } else if (a[i].cato.equals("ST") && stCat > 0) {
+                    System.out.println(a[i].studentName + ","
+                                       + a[i].totalMarks + ","
+                                       + a[i].cato);
                     stCat--;
                 }
             }
