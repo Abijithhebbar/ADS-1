@@ -31,7 +31,7 @@ import java.util.Scanner;
         heap.sort(students);
         heap.toString(students);
         System.out.println();
-        heap.mertiList(students, vacancies, unreserved,
+        heap.meritlist(students, vacancies, unreserved,
             bc, sc, st);
  	}
  }
