@@ -27,11 +27,11 @@ import java.util.Scanner;
  			Studentinfo eachStudent = new Studentinfo(input);
  			students[i] = eachStudent;
  		}
- 		// Sorting insertion = new Sorting();
-   //      insertion.sort(students);
-   //      insertion.toString(students);
-   //      System.out.println();
-   //      insertion.mertiList(students, seatsAvailable, openCat,
-   //          bcCat, scCat, stCat);
+ 		Sorting heap = new Sorting();
+        heap.sort(students);
+        heap.toString(students);
+        System.out.println();
+        heap.mertiList(students, vacancies, unreserved,
+            bc, sc, st);
  	}
  }
