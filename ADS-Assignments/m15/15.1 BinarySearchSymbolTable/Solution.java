@@ -26,19 +26,20 @@ final class Solution {
 			case "max":
 				System.out.println(search.max());
 				break;
-			case "keys":
-				search.keys();
-				break;
 			case "floor":
 				System.out.println(search.floor(inp[1]));
 				break;
-			case "rank":
-				System.out.println(search.rank(inp[1]));
-				break;
 			case "contains":
-				System.out.println(search.rank(inp[1]));
+				System.out.println(search.contains(inp[1]));
 				break;
 			case "get":
+				System.out.println(search.get(inp[1]));
+				break;
+			case "keys":
+				search.keys();
+				break;
+			case "rank":
+				System.out.println(search.rank(inp[1]));
 				break;
 			case "deleteMin":
 				search.deleteMin();
