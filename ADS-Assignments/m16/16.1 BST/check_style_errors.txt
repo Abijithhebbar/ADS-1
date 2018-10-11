@@ -1,0 +1,5 @@
+Starting audit...
+[ERROR] D:\ADS-1\ADS-Assignments\m16\16.1 BST\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] D:\ADS-1\ADS-Assignments\m16\16.1 BST\Solution.java:17: Line is longer than 80 characters (found 87). [LineLength]
+Audit done.
+Checkstyle ends with 2 errors.
