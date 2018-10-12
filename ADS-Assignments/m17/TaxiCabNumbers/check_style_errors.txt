@@ -1,0 +1,17 @@
+Starting audit...
+[ERROR] D:\ADS-1\ADS-Assignments\m17\TaxiCabNumbers\Taxinumber.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] D:\ADS-1\ADS-Assignments\m17\TaxiCabNumbers\Taxinumber.java:1: Missing a Javadoc comment. [JavadocType]
+[ERROR] D:\ADS-1\ADS-Assignments\m17\TaxiCabNumbers\Taxinumber.java:2:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] D:\ADS-1\ADS-Assignments\m17\TaxiCabNumbers\Taxinumber.java:2:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\ADS-1\ADS-Assignments\m17\TaxiCabNumbers\Taxinumber.java:5:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\ADS-1\ADS-Assignments\m17\TaxiCabNumbers\Taxinumber.java:5:25: Parameter num should be final. [FinalParameters]
+[ERROR] D:\ADS-1\ADS-Assignments\m17\TaxiCabNumbers\Taxinumber.java:5:34: Parameter num2 should be final. [FinalParameters]
+[ERROR] D:\ADS-1\ADS-Assignments\m17\TaxiCabNumbers\Taxinumber.java:7:37: '1000' is a magic number. [MagicNumber]
+[ERROR] D:\ADS-1\ADS-Assignments\m17\TaxiCabNumbers\Taxinumber.java:8:45: '1000' is a magic number. [MagicNumber]
+[ERROR] D:\ADS-1\ADS-Assignments\m17\TaxiCabNumbers\Taxinumber.java:10:53: '1000' is a magic number. [MagicNumber]
+[ERROR] D:\ADS-1\ADS-Assignments\m17\TaxiCabNumbers\Taxinumber.java:12:69: '1000' is a magic number. [MagicNumber]
+[ERROR] D:\ADS-1\ADS-Assignments\m17\TaxiCabNumbers\Taxinumber.java:13:61: '(' is followed by whitespace. [ParenPad]
+[ERROR] D:\ADS-1\ADS-Assignments\m17\TaxiCabNumbers\Taxinumber.java:14: Line is longer than 80 characters (found 97). [LineLength]
+[ERROR] D:\ADS-1\ADS-Assignments\m17\TaxiCabNumbers\Taxinumber.java:20: Line is longer than 80 characters (found 88). [LineLength]
+Audit done.
+Checkstyle ends with 14 errors.
