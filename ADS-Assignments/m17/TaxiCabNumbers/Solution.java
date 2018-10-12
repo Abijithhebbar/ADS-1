@@ -2,16 +2,22 @@ import java.util.Scanner;
 /**
 class Solution.
  */
-class Solution {
+final class Solution {
+    /**
+     default constructor.
+     */
+     private Solution() {
+
+     }
     /**
      * Main method.
      * @param args String.
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
-        int N = sc.nextInt();
-        int M = sc.nextInt();
-        int n = 1000;
+        int number = sc.nextInt();
+        int cases = sc.nextInt();
+        final int n = 1000;
         MinPQ<CubeSum> pq = new MinPQ<CubeSum>();
         for (int i = 1; i <= n; i++) {
             pq.insert(new CubeSum(i, i));
@@ -25,10 +31,10 @@ class Solution {
             CubeSum current = pq.delMin();
             if (current.sum == previous.sum) {
                 pair++;
-                if (pair == M) {
+                if (pair == cases) {
                     nth++;
                 }
-                if (N == nth) {
+                if (number == nth) {
                     System.out.println(current);
                     break;
                 }
@@ -37,8 +43,9 @@ class Solution {
             }
 
             previous = current;
-            if (current.j < n)
+            if (current.j < n) {
                 pq.insert(new CubeSum(current.i, current.j + 1));
+            }
         }
     }
 
