@@ -1,9 +1,5 @@
 Starting audit...
-[ERROR] D:\ADS-1\ADS-Assignments\m18\Week-3_Assignment-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\ADS-1\ADS-Assignments\m18\Week-3_Assignment-1\Solution.java:9:3: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] D:\ADS-1\ADS-Assignments\m18\Week-3_Assignment-1\Solution.java:23:29: '6' is a magic number. [MagicNumber]
-[ERROR] D:\ADS-1\ADS-Assignments\m18\Week-3_Assignment-1\Solution.java:32:29: '4' is a magic number. [MagicNumber]
-[ERROR] D:\ADS-1\ADS-Assignments\m18\Week-3_Assignment-1\Solution.java:37:29: '5' is a magic number. [MagicNumber]
-[ERROR] D:\ADS-1\ADS-Assignments\m18\Week-3_Assignment-1\Solution.java:41:18: '5' is a magic number. [MagicNumber]
+[ERROR] D:\ADS-1\ADS-Assignments\m18\Week-3_Assignment-1\Solution.java:5:7: Name 'list' must match pattern '^[A-Z][a-zA-Z0-9]*$'. [TypeName]
+[ERROR] D:\ADS-1\ADS-Assignments\m18\Week-3_Assignment-1\Solution.java:6: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 2 errors.
