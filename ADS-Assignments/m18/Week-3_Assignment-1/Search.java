@@ -25,6 +25,7 @@ class Search {
         if (i < size && keys[i] == key) {
             keys[i + 1] = key;
             values[i + 1] = value;
+            size++;
             return;
         }
         if (size == 0) {
