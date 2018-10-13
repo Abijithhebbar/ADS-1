@@ -39,6 +39,9 @@
   		System.out.println(search.min());
   		search.deleteMin();
   	}
+  	if (j != 5) {
+  		System.out.println("");
+  	}
   	}
   	}
   }
