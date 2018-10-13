@@ -2,9 +2,13 @@ class Search {
 	private float[] keys;
 	private String[] values;
 	private int size = 0;
+    private String check = "";
+    private float check1 = 0;
 	Search(int length) {
 		keys = new float[length];
 		values = new String[length];
+        MaxPQ<Double> maxObj = new MaxPQ<Double>();
+        MinPQ<Double> minObj = new MinPQ<Double>();
 	}
 	public int rank(final float key) {
         int low = 0, high = size - 1;
@@ -23,8 +27,11 @@ class Search {
     public void put(final float key, final String value) {
         int i = rank(key);
         if (i < size && keys[i] == key) {
-            keys[i] = key;
-            values[i] = value;
+            // keys[i] = key;
+            // values[i] = value;
+            String check = value;
+            float check1 = key;
+
             return;
         }
         if (size == 0) {
@@ -69,6 +76,9 @@ class Search {
         }
     }
     public String max() {
+        if (keys[size - 1] < check1) {
+            return check + " " + check1;
+        }
         return values[size - 1] + " " + keys[size - 1];
     }
     public String max(int i) {

@@ -230,13 +230,13 @@ Endurance Technologies Ltd. 0.1
 NIIT Tech 0.21
 Ceat 0.23
 
-Jubilant Food 4.08
+Larsen & Toubro 4.08
 NIIT Tech 3.21
 Vinati Organics 3.03
 Chola Inv Fin 2.47
 APL Apollo Tube 2.18
 
-Ceat -0.06
+Nalwa Sons Invst -0.06
 Endurance Technologies Ltd. 1.1
 Fine Organic Industries Ltd. 1.29
 APL Apollo Tube 2.18
@@ -261,7 +261,7 @@ Ceat 1.23
 Vinati Organics 1.03
 
 Larsen & Toubro -4.11
-Nalwa Sons Invst -0.1
+Endurance Technologies Ltd. -0.1
 Jubilant Food 0.08
 NIIT Tech 0.34
 Vinati Organics 1.03
@@ -532,13 +532,13 @@ Endurance Technologies Ltd. 0.1
 NIIT Tech 0.21
 Ceat 0.23
 
-Jubilant Food 4.08
+Larsen & Toubro 4.08
 NIIT Tech 3.21
 Vinati Organics 3.03
 Chola Inv Fin 2.47
 APL Apollo Tube 2.18
 
-Ceat -0.06
+Nalwa Sons Invst -0.06
 Endurance Technologies Ltd. 1.1
 Fine Organic Industries Ltd. 1.29
 APL Apollo Tube 2.18
@@ -563,7 +563,7 @@ Ceat 1.23
 Vinati Organics 1.03
 
 Larsen & Toubro -4.11
-Nalwa Sons Invst -0.1
+Endurance Technologies Ltd. -0.1
 Jubilant Food 0.08
 NIIT Tech 0.34
 Vinati Organics 1.03
@@ -688,25 +688,25 @@ Tasty Bite Eat
 Your Output: 
 Merck Ltd 4.83
 Schaeffler India 2.57
-ICRA 2.15
+TTK Prestige 2.15
 Bharat Rasayan 2.0
 HEG Ltd 1.61
 
 Bosch 0.3
-Abbott India 0.48
+MRF 0.48
 Oracle Fin 0.52
 Bajaj Finserv 0.64
 Lakshmi Machine 0.7
 
 Bajaj Finserv 5.64
 Schaeffler India 4.59
-ICRA 4.0
+Nestle India 4.0
 MRF 3.48
 HEG Ltd 2.61
 
 Merck Ltd -5.83
 Honeywell Auto -1.08
-TTK Prestige 0.0
+Eicher Motors 0.0
 WABCO India 0.33
 GSK Cons Health 0.84
 
@@ -719,7 +719,7 @@ Bosch 2.3
 Bajaj Finserv -4.64
 Schaeffler India -2.57
 Bharat Rasayan -2.0
-Merck Ltd -1.61
+HEG Ltd -1.61
 Eicher Motors -1.6
 
 Merck Ltd 4.83
