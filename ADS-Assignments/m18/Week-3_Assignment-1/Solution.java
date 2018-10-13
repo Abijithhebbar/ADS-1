@@ -96,22 +96,22 @@ final class Solution {
                 maxobj.insert(listObj);
                 count++;
             }
-            BinarySearchTree<String, Float> bestPerformer
+            BinarySearchTree<String, Float> topCompany
             = new  BinarySearchTree<>();
             for (int j = 0; j < five; j++) {
-                list maxpqBest = maxobj.delMax();
-                System.out.println(maxpqBest);
-                bestPerformer.put(maxpqBest.getlistname(),
-                    maxpqBest.getlistchange());
+                list topCompanyMaxPq = maxobj.delMax();
+                System.out.println(topCompanyMaxPq);
+                topCompany.put(topCompanyMaxPq.getlistname(),
+                    topCompanyMaxPq.getlistchange());
             }
             System.out.println();
-            BinarySearchTree<String, Float> worstPerformer
+            BinarySearchTree<String, Float> leastCompany
             = new BinarySearchTree<>();
             for (int k = 0; k < five; k++) {
-                list minpqWorst = minobj.delMin();
-                System.out.println(minpqWorst);
-                worstPerformer.put(minpqWorst.getlistname(),
-                    minpqWorst.getlistchange());
+                list leastCompanyMinPq = minobj.delMin();
+                System.out.println(leastCompanyMinPq);
+                leastCompany.put(leastCompanyMinPq.getlistname(),
+                    leastCompanyMinPq.getlistchange());
             }
             System.out.println();
         }
