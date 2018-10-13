@@ -4,35 +4,35 @@ import java.util.Scanner;
  */
 class List implements Comparable<List> {
     /**
-     * String ListName.
+     * String listname.
      */
-    private String ListName;
+    private String listname;
     /**
-     * float ListChange.
+     * float listchange.
      */
-    private float ListChange;
+    private float listchange;
     /**
      *Constructor.
      * @param      name   String type.
      * @param      change  float type.
      */
     List(final String name, final float change) {
-        this.ListName = name;
-        this.ListChange = change;
+        this.listname = name;
+        this.listchange = change;
     }
     /**
      * it is used to get the List name.
      * @return name.
      */
-    public String getListname() {
-        return this.ListName;
+    public String getlistname() {
+        return this.listname;
     }
     /**
-     * getListChange method.
+     * getlistchange method.
      * @return float value.
      */
-    public float getListchange() {
-        return this.ListChange;
+    public float getlistchange() {
+        return this.listchange;
     }
     /**
      *
@@ -41,16 +41,16 @@ class List implements Comparable<List> {
      * @return     an integer 1 or -1 or 0.
      */
     public int compareTo(final List other) {
-        if (this.ListChange > other.ListChange) {
+        if (this.listchange > other.listchange) {
             return 1;
         }
-        if (this.ListChange < other.ListChange) {
+        if (this.listchange < other.listchange) {
             return -1;
         }
-        if (this.ListName.compareTo(other.ListName) > 0) {
+        if (this.listname.compareTo(other.listname) > 0) {
             return 1;
         }
-        if (this.ListName.compareTo(other.ListName) < 0) {
+        if (this.listname.compareTo(other.listname) < 0) {
             return -1;
         }
         return 0;
@@ -62,7 +62,7 @@ class List implements Comparable<List> {
      */
     public String toString() {
         String str = "";
-        str = str + this.ListName + " " + this.ListChange;
+        str = str + this.listname + " " + this.listchange;
         return str;
     }
 }
@@ -81,19 +81,19 @@ final class Solution {
      */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
-        int ListLength = Integer.parseInt(sc.nextLine());
+        int listlength = Integer.parseInt(sc.nextLine());
         final int six = 6;
         final int five = 5;
         for (int i = 0; i < six; i++) {
             int count = 0;
             MinPQ<List> minobj = new MinPQ<>();
             MaxPQ<List> maxobj = new MaxPQ<>();
-            while (count < ListLength) {
+            while (count < listlength) {
                 String[] input = sc.nextLine().split(",");
-                List ListObj = new List(input[0],
+                List listobj = new List(input[0],
                     Float.parseFloat(input[1]));
-                minobj.insert(ListObj);
-                maxobj.insert(ListObj);
+                minobj.insert(listobj);
+                maxobj.insert(listobj);
                 count++;
             }
             Search<String, Float> topCompany
@@ -101,8 +101,8 @@ final class Solution {
             for (int j = 0; j < five; j++) {
                 List topCompanyMaxPq = maxobj.delMax();
                 System.out.println(topCompanyMaxPq);
-                topCompany.put(topCompanyMaxPq.getListname(),
-                    topCompanyMaxPq.getListchange());
+                topCompany.put(topCompanyMaxPq.getlistname(),
+                    topCompanyMaxPq.getlistchange());
             }
             System.out.println();
             Search<String, Float> leastCompany
@@ -110,8 +110,8 @@ final class Solution {
             for (int k = 0; k < five; k++) {
                 List leastCompanyMinPq = minobj.delMin();
                 System.out.println(leastCompanyMinPq);
-                leastCompany.put(leastCompanyMinPq.getListname(),
-                    leastCompanyMinPq.getListchange());
+                leastCompany.put(leastCompanyMinPq.getlistname(),
+                    leastCompanyMinPq.getlistchange());
             }
             System.out.println();
         }

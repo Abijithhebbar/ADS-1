@@ -1,7 +1,2 @@
 Starting audit...
-[ERROR] D:\ADS-1\ADS-Assignments\m18\Week-3_Assignment-1\Solution.java:9:20: Name 'ListName' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] D:\ADS-1\ADS-Assignments\m18\Week-3_Assignment-1\Solution.java:13:19: Name 'ListChange' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] D:\ADS-1\ADS-Assignments\m18\Week-3_Assignment-1\Solution.java:84:13: Name 'ListLength' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
-[ERROR] D:\ADS-1\ADS-Assignments\m18\Week-3_Assignment-1\Solution.java:93:22: Name 'ListObj' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
 Audit done.
-Checkstyle ends with 4 errors.
