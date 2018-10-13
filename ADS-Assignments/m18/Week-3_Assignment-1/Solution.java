@@ -28,7 +28,6 @@
   		float value = Float.parseFloat(lines[1]);
   		search.put(value, lines[0]);
   	}
-  	// System.out.println("");
   	System.out.println(search.max());
   	for (int i = 0; i < 4; i++) {
   		System.out.println(search.max(i));

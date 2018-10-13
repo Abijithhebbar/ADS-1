@@ -22,10 +22,11 @@ class Search {
     }
     public void put(final float key, final String value) {
         int i = rank(key);
-        // if (i < size && keys[i] == key) {
-        //     values[i] = value;
-        //     return;
-        // }
+        if (i < size && keys[i] == key) {
+            keys[i + 1] = key;
+            values[i + 1] = value;
+            return;
+        }
         if (size == 0) {
             keys[size] = key;
             values[size] = value;
