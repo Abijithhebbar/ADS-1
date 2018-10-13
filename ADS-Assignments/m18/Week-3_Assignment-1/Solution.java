@@ -132,17 +132,17 @@ final class Solution {
     }
 /**
  used to check the repetitions for the test cases.
- * @param S List type.
+ * @param s List type.
  * @param i int type.
  *
  * @return count.
  */
 public static int repetitions(final List s, final int i) {
-    final int six =6;
+    final int six = 6;
     List[] str = new List[six];
     str[i] = s;
     int count = 0;
-    for (int j = 0; j < 6; j++) {
+    for (int j = 0; j < six; j++) {
         if (s.equals(str[i])) {
             count++;
         }
