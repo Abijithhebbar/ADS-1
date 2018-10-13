@@ -23,8 +23,8 @@ class Search {
     public void put(final float key, final String value) {
         int i = rank(key);
         if (i < size && keys[i] == key) {
-            keys[size - 1] = key;
-            values[size - 1] = value;
+            keys[i] = key;
+            values[i] = value;
             return;
         }
         if (size == 0) {
