@@ -1,17 +1,8 @@
 Starting audit...
 [ERROR] D:\ADS-1\ADS-Assignments\m18\Week-3_Assignment-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\ADS-1\ADS-Assignments\m18\Week-3_Assignment-1\Solution.java:9:3: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] D:\ADS-1\ADS-Assignments\m18\Week-3_Assignment-1\Solution.java:31:29: '4' is a magic number. [MagicNumber]
-[ERROR] D:\ADS-1\ADS-Assignments\m18\Week-3_Assignment-1\Solution.java:36:29: '5' is a magic number. [MagicNumber]
-[ERROR] D:\ADS-1\ADS-Assignments\m18\Week-3_Assignment-1\Solution.java:48:29: '4' is a magic number. [MagicNumber]
-[ERROR] D:\ADS-1\ADS-Assignments\m18\Week-3_Assignment-1\Solution.java:53:29: '5' is a magic number. [MagicNumber]
-[ERROR] D:\ADS-1\ADS-Assignments\m18\Week-3_Assignment-1\Solution.java:65:29: '4' is a magic number. [MagicNumber]
-[ERROR] D:\ADS-1\ADS-Assignments\m18\Week-3_Assignment-1\Solution.java:70:29: '5' is a magic number. [MagicNumber]
-[ERROR] D:\ADS-1\ADS-Assignments\m18\Week-3_Assignment-1\Solution.java:82:29: '4' is a magic number. [MagicNumber]
-[ERROR] D:\ADS-1\ADS-Assignments\m18\Week-3_Assignment-1\Solution.java:87:29: '5' is a magic number. [MagicNumber]
-[ERROR] D:\ADS-1\ADS-Assignments\m18\Week-3_Assignment-1\Solution.java:99:29: '4' is a magic number. [MagicNumber]
-[ERROR] D:\ADS-1\ADS-Assignments\m18\Week-3_Assignment-1\Solution.java:104:29: '5' is a magic number. [MagicNumber]
-[ERROR] D:\ADS-1\ADS-Assignments\m18\Week-3_Assignment-1\Solution.java:116:29: '4' is a magic number. [MagicNumber]
-[ERROR] D:\ADS-1\ADS-Assignments\m18\Week-3_Assignment-1\Solution.java:121:29: '5' is a magic number. [MagicNumber]
+[ERROR] D:\ADS-1\ADS-Assignments\m18\Week-3_Assignment-1\Solution.java:23:29: '6' is a magic number. [MagicNumber]
+[ERROR] D:\ADS-1\ADS-Assignments\m18\Week-3_Assignment-1\Solution.java:33:29: '4' is a magic number. [MagicNumber]
+[ERROR] D:\ADS-1\ADS-Assignments\m18\Week-3_Assignment-1\Solution.java:38:29: '5' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 14 errors.
+Checkstyle ends with 5 errors.
