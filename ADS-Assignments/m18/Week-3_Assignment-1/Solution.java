@@ -61,9 +61,9 @@ class list implements Comparable<list> {
      * @return string which is used to print.
      */
     public String toString() {
-        String inputStr = "";
-        inputStr = inputStr + this.listName + " " + this.listChange;
-        return inputStr;
+        String str = "";
+        str = str + this.listName + " " + this.listChange;
+        return str;
     }
 }
 /**
@@ -80,8 +80,8 @@ final class Solution {
      * @param      args  String type.
      */
     public static void main(final String[] args) {
-        Scanner scan = new Scanner(System.in);
-        int listLength = Integer.parseInt(scan.nextLine());
+        Scanner sc = new Scanner(System.in);
+        int listLength = Integer.parseInt(sc.nextLine());
         final int six = 6;
         final int five = 5;
         for (int i = 0; i < six; i++) {
@@ -89,15 +89,15 @@ final class Solution {
             MinPQ<list> minobj = new MinPQ<>();
             MaxPQ<list> maxobj = new MaxPQ<>();
             while (count < listLength) {
-                String[] input = scan.nextLine().split(",");
+                String[] input = sc.nextLine().split(",");
                 list listObj = new list(input[0],
                     Float.parseFloat(input[1]));
                 minobj.insert(listObj);
                 maxobj.insert(listObj);
                 count++;
             }
-            BinarySearchTree<String, Float> topCompany
-            = new  BinarySearchTree<>();
+            Search<String, Float> topCompany
+            = new  Search<>();
             for (int j = 0; j < five; j++) {
                 list topCompanyMaxPq = maxobj.delMax();
                 System.out.println(topCompanyMaxPq);
@@ -105,8 +105,8 @@ final class Solution {
                     topCompanyMaxPq.getlistchange());
             }
             System.out.println();
-            BinarySearchTree<String, Float> leastCompany
-            = new BinarySearchTree<>();
+            Search<String, Float> leastCompany
+            = new Search<>();
             for (int k = 0; k < five; k++) {
                 list leastCompanyMinPq = minobj.delMin();
                 System.out.println(leastCompanyMinPq);
@@ -115,5 +115,21 @@ final class Solution {
             }
             System.out.println();
         }
+        int last = Integer.parseInt(sc.nextLine());
+        for (int i = 0; i < last; i++) {
+        	String[] input2 = sc.nextLine().split(",");
+        	switch(input2[1]) {
+        		case "maxST":
+        			break;
+        		case "minST":
+        			break;
+        		default:
+        			break;
+        	}
+        }
     }
+
+// public void repetitions(String s) {
+// 	String[] str = new String[5];
+// }
 }

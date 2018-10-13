@@ -8,7 +8,7 @@ import java.util.List;
  * @param      <Key>    The key
  * @param      <Value>  The value
  */
-class BinarySearchTree<Key extends Comparable<Key>, Value> {
+class Search<Key extends Comparable<Key>, Value> {
     /**
      * { var_description }.
      */
@@ -26,7 +26,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
      *
      * @param      length  The length
      */
-    BinarySearchTree() {
+    Search() {
         keys = (Key[])new Comparable[30];
         values = (Value[]) new Object[30];
         size = 0;
