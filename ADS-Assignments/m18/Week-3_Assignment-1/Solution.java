@@ -1,56 +1,56 @@
 import java.util.Scanner;
 /**
- * Class for list.
+ * Class for List.
  */
-class list implements Comparable<list> {
+class List implements Comparable<List> {
     /**
-     * String listName
+     * String ListName.
      */
-    private String listName;
+    private String ListName;
     /**
      * float ListChange.
      */
-    private float listChange;
+    private float ListChange;
     /**
      *Constructor.
      * @param      name   String type.
      * @param      change  float type.
      */
-    list(final String name, final float change) {
-        this.listName = name;
-        this.listChange = change;
+    List(final String name, final float change) {
+        this.ListName = name;
+        this.ListChange = change;
     }
     /**
-     * it is used to get the list name.
+     * it is used to get the List name.
      * @return name.
      */
-    public String getlistname() {
-        return this.listName;
+    public String getListname() {
+        return this.ListName;
     }
     /**
-     * getlistChange method.
+     * getListChange method.
      * @return float value.
      */
-    public float getlistchange() {
-        return this.listChange;
+    public float getListchange() {
+        return this.ListChange;
     }
     /**
      *
-     * @param      other list type.
+     * @param      other List type.
      *
      * @return     an integer 1 or -1 or 0.
      */
-    public int compareTo(final list other) {
-        if (this.listChange > other.listChange) {
+    public int compareTo(final List other) {
+        if (this.ListChange > other.ListChange) {
             return 1;
         }
-        if (this.listChange < other.listChange) {
+        if (this.ListChange < other.ListChange) {
             return -1;
         }
-        if (this.listName.compareTo(other.listName) > 0) {
+        if (this.ListName.compareTo(other.ListName) > 0) {
             return 1;
         }
-        if (this.listName.compareTo(other.listName) < 0) {
+        if (this.ListName.compareTo(other.ListName) < 0) {
             return -1;
         }
         return 0;
@@ -62,7 +62,7 @@ class list implements Comparable<list> {
      */
     public String toString() {
         String str = "";
-        str = str + this.listName + " " + this.listChange;
+        str = str + this.ListName + " " + this.ListChange;
         return str;
     }
 }
@@ -81,55 +81,55 @@ final class Solution {
      */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
-        int listLength = Integer.parseInt(sc.nextLine());
+        int ListLength = Integer.parseInt(sc.nextLine());
         final int six = 6;
         final int five = 5;
         for (int i = 0; i < six; i++) {
             int count = 0;
-            MinPQ<list> minobj = new MinPQ<>();
-            MaxPQ<list> maxobj = new MaxPQ<>();
-            while (count < listLength) {
+            MinPQ<List> minobj = new MinPQ<>();
+            MaxPQ<List> maxobj = new MaxPQ<>();
+            while (count < ListLength) {
                 String[] input = sc.nextLine().split(",");
-                list listObj = new list(input[0],
+                List ListObj = new List(input[0],
                     Float.parseFloat(input[1]));
-                minobj.insert(listObj);
-                maxobj.insert(listObj);
+                minobj.insert(ListObj);
+                maxobj.insert(ListObj);
                 count++;
             }
             Search<String, Float> topCompany
             = new  Search<>();
             for (int j = 0; j < five; j++) {
-                list topCompanyMaxPq = maxobj.delMax();
+                List topCompanyMaxPq = maxobj.delMax();
                 System.out.println(topCompanyMaxPq);
-                topCompany.put(topCompanyMaxPq.getlistname(),
-                    topCompanyMaxPq.getlistchange());
+                topCompany.put(topCompanyMaxPq.getListname(),
+                    topCompanyMaxPq.getListchange());
             }
             System.out.println();
             Search<String, Float> leastCompany
             = new Search<>();
             for (int k = 0; k < five; k++) {
-                list leastCompanyMinPq = minobj.delMin();
+                List leastCompanyMinPq = minobj.delMin();
                 System.out.println(leastCompanyMinPq);
-                leastCompany.put(leastCompanyMinPq.getlistname(),
-                    leastCompanyMinPq.getlistchange());
+                leastCompany.put(leastCompanyMinPq.getListname(),
+                    leastCompanyMinPq.getListchange());
             }
             System.out.println();
         }
         int last = Integer.parseInt(sc.nextLine());
         for (int i = 0; i < last; i++) {
-        	String[] input2 = sc.nextLine().split(",");
-        	switch(input2[1]) {
-        		case "maxST":
-        			break;
-        		case "minST":
-        			break;
-        		default:
-        			break;
-        	}
+            String[] input2 = sc.nextLine().split(",");
+            switch (input2[1]) {
+                case "maxST":
+                    break;
+                case "minST":
+                    break;
+                default:
+                    break;
+            }
         }
     }
 
 // public void repetitions(String s) {
-// 	String[] str = new String[5];
+//  String[] str = new String[5];
 // }
 }
