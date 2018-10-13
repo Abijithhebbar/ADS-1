@@ -130,9 +130,16 @@ final class Solution {
             }
         }
     }
-
-public static int repetitions(List s, int i) {
-    List[] str = new List[6];
+/**
+ used to check the repetitions for the test cases.
+ * @param S List type.
+ * @param i int type.
+ *
+ * @return count.
+ */
+public static int repetitions(final List s, final int i) {
+    final int six =6;
+    List[] str = new List[six];
     str[i] = s;
     int count = 0;
     for (int j = 0; j < 6; j++) {
