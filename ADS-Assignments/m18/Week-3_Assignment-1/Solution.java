@@ -110,6 +110,7 @@ final class Solution {
             for (int k = 0; k < five; k++) {
                 List leastCompanyMinPq = minobj.delMin();
                 System.out.println(leastCompanyMinPq);
+                repetitions(leastCompanyMinPq, k);
                 leastCompany.put(leastCompanyMinPq.getlistname(),
                     leastCompanyMinPq.getlistchange());
             }
@@ -122,6 +123,7 @@ final class Solution {
                 case "maxST":
                     break;
                 case "minST":
+                // System.out.println(repetitions(input2[1], 1));
                     break;
                 default:
                     break;
@@ -129,7 +131,15 @@ final class Solution {
         }
     }
 
-// public void repetitions(String s) {
-//  String[] str = new String[5];
-// }
+public static int repetitions(List s, int i) {
+    List[] str = new List[6];
+    str[i] = s;
+    int count = 0;
+    for (int j = 0; j < 6; j++) {
+        if (s.equals(str[i])) {
+            count++;
+        }
+    }
+    return count;
+}
 }
