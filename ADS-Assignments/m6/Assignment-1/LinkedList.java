@@ -1,4 +1,3 @@
-import java.util.Scanner;
 /**
 *Class linked list.
 */
@@ -12,11 +11,6 @@ class LinkedList {
     *Creating a Node and assigning value to it.
     */
     private Node first = null;
-    private Node last = null;
-    /**
-     Integer size.
-     */
-     private int size = 0;
     /**
     *Class Node.
     */
@@ -34,7 +28,6 @@ class LinkedList {
         *Creating a node.
         */
         private Node next;
-
         /**
         *Over ridden constructor.
         *@param inputItem input item.
@@ -55,19 +48,9 @@ class LinkedList {
     *@param item input.
     */
     public void push(final int item) {
-        if (last == null) {
-            last = new Node();
-            last.item = item;
-            last.next = null;
-            first = last;
-        }   else {
-            Node temp = last;
-            last = new Node();
-            last.item = item;
-            last.next = null;
-            temp.next = last;
-        }
-        size++;
+        Node nextAddress = new Node(item);
+        nextAddress.next = first;
+        first = nextAddress;
     }
     /**
     *removes the element.
@@ -76,7 +59,6 @@ class LinkedList {
     public int pop() {
         int output = first.item;
         first = first.next;
-        size--;
         return output;
     }
     /**
@@ -85,13 +67,6 @@ class LinkedList {
     */
     public boolean isEmpty() {
         return first == null;
-    }
-    /**
-     * @return [description]
-     */
-
-   public int size() {
-    	return size;
     }
     /**
     *This method converts from digits to numbers.

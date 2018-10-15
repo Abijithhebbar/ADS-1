@@ -32,24 +32,10 @@ final class AddLargeNumbers {
     /**
     *This method should help the adding both the lists.
     */
-    public static LinkedList addLargeNumbers(final LinkedList list1,
-        final LinkedList list2) {
-        LinkedList result = new LinkedList();
-        Check check = new Check();
-        if (list1.size() == list2.size()) {
-            result = check.refer(list1, list2);
-        }
-        if (list1.size() > list2.size()) {
-            int size = list1.size() - list2.size();
-            result = check.refer(list1, list2, size);
-        }
-        if (list2.size() > list1.size()) {
-            int len = list2.size() - list1.size();
-            int k = list1.size();
-            result = check.refer(list1, list2, len, k);
-        }
-    return result;
-    }
+    // public static LinkedList addLargeNumbers(final LinkedList list1,
+    //     final LinkedList list2) {
+
+    // }
 }
 /**
 *This class is used to read the input.
@@ -76,13 +62,13 @@ public final class Solution {
                 System.out.println(AddLargeNumbers.digitsToNumber(pDigits));
                 System.out.println(AddLargeNumbers.digitsToNumber(qDigits));
                 break;
-            case "addLargeNumbers":
-                pDigits = AddLargeNumbers.numberToDigits(p);
-                qDigits = AddLargeNumbers.numberToDigits(q);
-                LinkedList result =
-                AddLargeNumbers.addLargeNumbers(pDigits, qDigits);
-                System.out.println(AddLargeNumbers.digitsToNumber(result));
-                break;
+            // case "addLargeNumbers":
+            //     pDigits = AddLargeNumbers.numberToDigits(p);
+            //     qDigits = AddLargeNumbers.numberToDigits(q);
+                // LinkedList result =
+                // AddLargeNumbers.addLargeNumbers(pDigits, qDigits);
+            //     System.out.println(AddLargeNumbers.digitsToNumber(result));
+            //     break;
             default:
                     break;
         }
