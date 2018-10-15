@@ -9,7 +9,7 @@ class Check {
                     a = list1.pop() + list2.pop() + b;
                     c = a % ten;
                     result.push(c);
-                    b = b / ten;
+                    b = a / ten;
                 }
             }
             if (c > 0) {
