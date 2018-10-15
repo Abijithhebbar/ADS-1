@@ -1,78 +1,97 @@
+import java.util.Scanner;
+/**
+*Class linked list.
+*/
 class LinkedList {
-	private int size = 0;
-	LinkedList() {
-	}
-	Node first = null;
-	Node last = null;
-	public class Node {
-		Node() {
-		}
-		int item;
-		Node next;
-		Node(final int inputItem) {
-			this.item = inputItem;
-		}
-	}
-	public int top() {
-		return first.item;
-	}
-	public void push(final int item) {
-		Node nextAddress = new Node(item);
-		nextAddress.next = first;
-		first = nextAddress;
-		size++;
-	}
-	public int popAtStart() {
-		int output = first.item;
-		first = first.next;
-		size--;
-		return output;
-	}
-	public void pushAtStart(final int item) {
-        if (first == null) {
-            //Node oldfirst = first;
-            first = new Node();
-            first.item = item;
-            first.next = null;
-            last = first;
-        } else {
-            Node oldfirst = first;
-            first = new Node();
-            first.item = item;
-            first.next = oldfirst;
+    /**
+    *Default constructor of the above class.
+    */
+    LinkedList() {
+    }
+    /**
+    *Creating a Node and assigning value to it.
+    */
+    private Node first = null;
+    /**
+     Integer size.
+     */
+     private int size = 0;
+    /**
+    *Class Node.
+    */
+    public class Node {
+        /**
+        *A default constructor.
+        */
+        Node() {
         }
+        /**
+        *Declaring an integer data type.
+        */
+        private int item;
+        /**
+        *Creating a node.
+        */
+        private Node next;
+        /**
+        *Over ridden constructor.
+        *@param inputItem input item.
+        */
+        Node(final int inputItem) {
+            this.item = inputItem;
+        }
+    }
+    /**
+    *get the top element in the stack.
+    *@return item.
+    */
+    public int top() {
+        return first.item;
+    }
+    /**
+    *pushes the element or item into the stack.
+    *@param item input.
+    */
+    public void push(final int item) {
+        Node nextAddress = new Node(item);
+        nextAddress.next = first;
+        first = nextAddress;
         size++;
     }
-    public void pushAtEnd(final int item) {
-        if (last == null || first == null) {
-            // last = new Node();
-            // last.item = item;
-            // last.next = null;
-            // first = last;
-            pushAtStart(item);
-        }   else {
-            Node temp = last;
-            last = new Node();
-            last.item = item;
-            last.next = null;
-            temp.next = last;
-        }
-        size++;
+    /**
+    *removes the element.
+    *@return output.
+    */
+    public int pop() {
+        int output = first.item;
+        first = first.next;
+        size--;
+        return output;
     }
-	public boolean isEmpty() {
-		return first == null;
-	}
-	public String toString() {
-		Node head = first;
-		String storage = "";
-		while(head != null) {
-			storage = storage + head.item;
-			head = head.next;
-		}
-		return storage;
-	}
-	public int size() {
-		return size;
-	}
-
+    /**
+    *This method checks if the list is empty.
+    *@return true or false.
+    */
+    public boolean isEmpty() {
+        return first == null;
+    }
+    /**
+     * @return size.
+     */
+    public int size() {
+    	return size;
+    }
+    /**
+    *This method converts from digits to numbers.
+    *@return Storge which is the converted.
+    */
+    public String toString() {
+        Node head = first;
+        String storage = "";
+        while (head != null) {
+            storage = storage + head.item;
+            head = head.next;
+        }
+        return storage;
+    }
 }

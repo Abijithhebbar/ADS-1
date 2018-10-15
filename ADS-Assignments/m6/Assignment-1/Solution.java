@@ -1,145 +1,81 @@
 import java.util.Scanner;
 /**
- add large number class.
- **/
+*this class adds the large numbers.
+*/
 final class AddLargeNumbers {
     /**
-     * default constructor.
-     **/
+    *A deafult constructor.
+    */
     private AddLargeNumbers() {
-
     }
     /**
-     * number To digit.
-     * @param number obj.
-     * @return obj.
-     **/
+    *This method reverse's the numbers and Stroe in digits from and retuns.
+    *@param number input is given in the form of number.
+    *@return numbers in from of digits.
+    */
     public static LinkedList numberToDigits(final String number) {
         LinkedList numberToDigits = new LinkedList();
         for (int i = number.length() - 1; i >= 0; i--) {
-            String elementConverstion = "" + number.charAt(i);
-            numberToDigits.push(Integer.parseInt(elementConverstion));
+            String digitConverstion = "" + number.charAt(i);
+            numberToDigits.push(Integer.parseInt(digitConverstion));
         }
         return numberToDigits;
     }
     /**
-     * digits to string.
-     * @param list obj.
-     * @return string.
-     */
+    *this methods retruns the converstion from digits to Number.
+    *@param list sends the LinkedList.
+    *@return list.
+    */
     public static String digitsToNumber(final LinkedList list) {
         return list.toString();
     }
-    /**.
-     add large numbers
-     * @param list1 obj.
-     * @param list2 obj.
-     *
-     * @return object.
-     **/
+    /**
+    *This method should help the adding both the lists.
+    */
     public static LinkedList addLargeNumbers(final LinkedList list1,
-            final LinkedList list2) {
+        final LinkedList list2) {
         LinkedList result = new LinkedList();
-        int a, c = 0, b = 0, count = 0, check = 0;
-        final int ten = 10, nine = 9;
+        Check check = new Check();
         if (list1.size() == list2.size()) {
-            while (!list1.isEmpty()) {
-                while (!list2.isEmpty()) {
-                    a = list1.popAtStart() + list2.popAtStart() + b;
-                    c = a % ten;
-                    result.pushAtStart(c);
-                    b = a / ten;
-
-                }
-            }
-            if (c == 1) {
-                result.pushAtStart(c);
-            }
-             return result;
-        } else if (list1.size() > list2.size()) {
-            int x = 0;
-            check  = list1.size() - list2.size();
-            while (check != 0) {
-                list2.pushAtEnd(x);
-            }
-            if (list1.size() == list2.size()) {
-                while (!list1.isEmpty()) {
-                    while (!list2.isEmpty()) {
-                        a = list1.popAtStart() + list2.popAtStart() + b;
-                        c = a % ten;
-                        result.pushAtStart(c);
-                        b = a / ten;
-
-                    }
-                }
-                if (c == 1) {
-                    result.pushAtStart(c);
-                }
-                 return result;
-            }
-
-        } else {
-            int y = 0;
-            check  = list2.size() - list1.size();
-            while (check != 0) {
-                list1.pushAtEnd(y);
-            }
-            if (list1.size() == list2.size()) {
-                while (!list1.isEmpty()) {
-                    while (!list2.isEmpty()) {
-                        a = list1.popAtStart() + list2.popAtStart() + b;
-                        c = a % ten;
-                        result.pushAtStart(c);
-                        b = b / ten;
-                    }
-                }
-                if (c == 1) {
-                    result.pushAtStart(c);
-                }
-                 return result;
-            }
+            result = check.refer(list1, list2);
         }
-        return result;
+    return result;
     }
 }
-
 /**
- * solution class.
- **/
-final class Solution {
+*This class is used to read the input.
+*/
+public final class Solution {
     /**
-     default constructor.
-     **/
+    *A daefult constructor.
+    */
     private Solution() {
-
     }
     /**
-     main method.
-     * @param args String.
-     **/
+    *main method is used to read the inut from the test cases.
+    @param args arguments.
+    */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         String input = sc.nextLine();
         String p = sc.nextLine();
         String q = sc.nextLine();
         switch (input) {
-        case "numberToDigits":
-            LinkedList pDigits = AddLargeNumbers.numberToDigits(p);
-            LinkedList qDigits = AddLargeNumbers.numberToDigits(q);
-            System.out.println(AddLargeNumbers.digitsToNumber(pDigits));
-            System.out.println(AddLargeNumbers.digitsToNumber(qDigits));
-            break;
-
-        case "addLargeNumbers":
-            pDigits = AddLargeNumbers.numberToDigits(p);
-            qDigits = AddLargeNumbers.numberToDigits(q);
-            LinkedList result = AddLargeNumbers.addLargeNumbers(
-                                    pDigits, qDigits);
-            System.out.println(AddLargeNumbers.digitsToNumber(result));
-            break;
-        default :
-            break;
+            case "numberToDigits":
+                LinkedList pDigits = AddLargeNumbers.numberToDigits(p);
+                LinkedList qDigits = AddLargeNumbers.numberToDigits(q);
+                System.out.println(AddLargeNumbers.digitsToNumber(pDigits));
+                System.out.println(AddLargeNumbers.digitsToNumber(qDigits));
+                break;
+            case "addLargeNumbers":
+                pDigits = AddLargeNumbers.numberToDigits(p);
+                qDigits = AddLargeNumbers.numberToDigits(q);
+                LinkedList result =
+                AddLargeNumbers.addLargeNumbers(pDigits, qDigits);
+                System.out.println(AddLargeNumbers.digitsToNumber(result));
+                break;
+            default:
+                    break;
         }
     }
-
 }
