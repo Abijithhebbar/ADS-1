@@ -44,9 +44,15 @@ final class AddLargeNumbers {
         final int ten = 10, nine = 9;
         while (!list1.isEmpty()) {
         	while (!list2.isEmpty()) {
-        		a = list1.pop() + list2.pop();
-        		result.push(a);
+        		a = list1.pop() + list2.pop() + b;
+        		c = a % 10;
+        		result.push(c);
+        		b = a / 10;
+
         	}
+        }
+        if (c == 1) {
+        	result.push(c);
         }
         return result;
 }
