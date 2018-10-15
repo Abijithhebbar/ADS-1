@@ -70,6 +70,7 @@ final class AddLargeNumbers {
                     // System.out.print(a);
                     count++;
                     result.push(a);
+                    result.push(c);
                 }
 
             } else {
