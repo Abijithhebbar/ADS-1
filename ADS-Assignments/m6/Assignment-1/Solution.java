@@ -9,11 +9,11 @@ final class AddLargeNumbers {
     private AddLargeNumbers() {
 
     }
-/**
- * number To digit.
- * @param number obj.
- * @return obj.
- **/
+    /**
+     * number To digit.
+     * @param number obj.
+     * @return obj.
+     **/
     public static LinkedList numberToDigits(final String number) {
         LinkedList numberToDigits = new LinkedList();
         for (int i = number.length() - 1; i >= 0; i--) {
@@ -22,72 +22,71 @@ final class AddLargeNumbers {
         }
         return numberToDigits;
     }
-/**
- * digits to string.
- * @param list obj.
- * @return string.
- */
+    /**
+     * digits to string.
+     * @param list obj.
+     * @return string.
+     */
     public static String digitsToNumber(final LinkedList list) {
         return list.toString();
     }
-/**.
- add large numbers
- * @param list1 obj.
- * @param list2 obj.
- *
- * @return object.
- **/
+    /**.
+     add large numbers
+     * @param list1 obj.
+     * @param list2 obj.
+     *
+     * @return object.
+     **/
     public static LinkedList addLargeNumbers(final LinkedList list1,
-     final LinkedList list2) {
+            final LinkedList list2) {
         LinkedList result = new LinkedList();
         int a, c = 0, b = 0, count = 0, check = 0;
         final int ten = 10, nine = 9;
         if (list1.size() == list2.size()) {
-        	while (!list1.isEmpty()) {
-        	while (!list2.isEmpty()) {
-        		a = list1.popAtStart() + list2.popAtStart() + b;
-        		c = a % 10;
-        		result.pushAtStart(c);
-        		b = a / 10;
+            while (!list1.isEmpty()) {
+                while (!list2.isEmpty()) {
+                    a = list1.popAtStart() + list2.popAtStart() + b;
+                    c = a % 10;
+                    result.pushAtStart(c);
+                    b = a / 10;
 
-        	}
+                }
+            }
+            if (c == 1) {
+                result.pushAtStart(c);
+            }
+        } else {
+            if (list1.size() > list2.size()) {
+                int x = 0;
+                check  = list1.size() - list2.size();
+                while (check != 0) {
+                    list2.pushAtEnd(x);
+                }
+            }
+            if (list1.size() < list2.size()) {
+                int x = 0;
+                check  = list2.size() - list1.size();
+                while (check != 0) {
+                    list1.pushAtEnd(x);
+                }
+            }
         }
-        if (c == 1) {
-        	result.pushAtStart(c);
-        }
-        }
-        else {
-        	if (list1.size() > list2.size()) {
-        		int x = 0;
-        		check  = list1.size() - list2.size();
-        		while (check != 0) {
-        			list2.pushAtEnd(x);
-        		}
-        	}
-        	if (list1.size() < list2.size()) {
-        		int x = 0;
-        		check  = list2.size() - list1.size();
-        		while (check != 0) {
-        			list1.pushAtEnd(x);
-        		}
-        	}
-        	if (list1.size() == list2.size()) {
-        	while (!list1.isEmpty()) {
-        	while (!list2.isEmpty()) {
-        		a = list1.popAtStart() + list2.popAtStart() + b;
-        		c = a % 10;
-        		result.pushAtStart(c);
-        		b = a / 10;
+        if (list1.size() == list2.size()) {
+            while (!list1.isEmpty()) {
+                while (!list2.isEmpty()) {
+                    a = list1.popAtStart() + list2.popAtStart() + b;
+                    c = a % 10;
+                    result.pushAtStart(c);
+                    b = a / 10;
 
-        	}
-        }
-        if (c == 1) {
-        	result.pushAtStart(c);
-        }
-        }
+                }
+            }
+            if (c == 1) {
+                result.pushAtStart(c);
+            }
         }
         return result;
-}
+    }
 }
 
 /**
@@ -97,13 +96,13 @@ final class Solution {
     /**
      default constructor.
      **/
-     private Solution() {
+    private Solution() {
 
-     }
-     /**
-      main method.
-      * @param args String.
-      **/
+    }
+    /**
+     main method.
+     * @param args String.
+     **/
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         String input = sc.nextLine();
@@ -121,11 +120,11 @@ final class Solution {
             pDigits = AddLargeNumbers.numberToDigits(p);
             qDigits = AddLargeNumbers.numberToDigits(q);
             LinkedList result = AddLargeNumbers.addLargeNumbers(
-                pDigits, qDigits);
+                                    pDigits, qDigits);
             System.out.println(AddLargeNumbers.digitsToNumber(result));
             break;
         default :
-        break;
+            break;
         }
     }
 
