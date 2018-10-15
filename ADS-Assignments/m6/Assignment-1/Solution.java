@@ -41,46 +41,15 @@ final class AddLargeNumbers {
      final LinkedList list2) {
         LinkedList result = new LinkedList();
         int a, c = 0, b = 0, count = 0;
-        // a = list1.pop();
-        // result.push(a);
-        // int b = list2.pop();
-        // result.push(b);
         final int ten = 10, nine = 9;
         while (!list1.isEmpty()) {
-            // a = 0;
-            while (!list2.isEmpty()) {
-                a = list1.pop() + list2.pop() + b;
-                // c = 0;
-                if (list1.size() != count - 1 || list2.size() != count - 1) {
-                  if (a > nine) {
-                    c = a % ten;
-                    b = a / ten;
-                    count++;
-                    // System.out.println(a);
-                    // System.out.println(b);
-                    // System.out.println(c);
-                    result.push(c);
-
-
-                } else {
-                    a = a + b;
-                    // if (a > 9) {
-                    // 	a = a % 10;
-                    // }
-                    // System.out.print(a);
-                    count++;
-                    result.push(a);
-                    result.push(c);
-                }
-
-            } else {
-                result.push(a);
-            }
+        	while (!list2.isEmpty()) {
+        		a = list1.pop() + list2.pop();
+        		result.push(a);
+        	}
         }
-    }
-    return result;
+        return result;
 }
-
 }
 
 /**

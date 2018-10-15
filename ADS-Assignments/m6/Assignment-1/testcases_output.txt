@@ -50,13 +50,13 @@ Your Output:
 Expected Output: 
 1110
 Your Output: 
-110
+101010
 ----------------------------------------
 ########## Testcase 7: Failed ##########
 Expected Output: 
 17298729465094143782178336767086358354
 Your Output: 
-5538536807676338712873414905649278926
+141412171412151791615161512121716101117161213101318914151318111617181116
 ----------------------------------------
 ########## Testcase 8: Failed ##########
 Expected Output: 
@@ -64,8 +64,8 @@ Expected Output:
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
 	at LinkedList.pop(LinkedList.java:25)
-	at AddLargeNumbers.addLargeNumbers(Solution.java:52)
-	at Solution.main(Solution.java:116)
+	at AddLargeNumbers.addLargeNumbers(Solution.java:47)
+	at Solution.main(Solution.java:85)
 ----------------------------------------
 ########## Testcase 9: Failed ##########
 Expected Output: 
@@ -73,8 +73,8 @@ Expected Output:
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
 	at LinkedList.pop(LinkedList.java:25)
-	at AddLargeNumbers.addLargeNumbers(Solution.java:52)
-	at Solution.main(Solution.java:116)
+	at AddLargeNumbers.addLargeNumbers(Solution.java:47)
+	at Solution.main(Solution.java:85)
 ----------------------------------------
 ########## Testcase 10: Failed ##########
 Expected Output: 
@@ -82,8 +82,8 @@ Expected Output:
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
 	at LinkedList.pop(LinkedList.java:25)
-	at AddLargeNumbers.addLargeNumbers(Solution.java:52)
-	at Solution.main(Solution.java:116)
+	at AddLargeNumbers.addLargeNumbers(Solution.java:47)
+	at Solution.main(Solution.java:85)
 ----------------------------------------
 ########## Testcase 11: Failed ##########
 Expected Output: 
@@ -91,6 +91,6 @@ Expected Output:
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
 	at LinkedList.pop(LinkedList.java:25)
-	at AddLargeNumbers.addLargeNumbers(Solution.java:52)
-	at Solution.main(Solution.java:116)
+	at AddLargeNumbers.addLargeNumbers(Solution.java:47)
+	at Solution.main(Solution.java:85)
 ----------------------------------------
