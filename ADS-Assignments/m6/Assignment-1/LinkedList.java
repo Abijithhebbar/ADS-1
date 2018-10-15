@@ -12,6 +12,7 @@ class LinkedList {
     *Creating a Node and assigning value to it.
     */
     private Node first = null;
+    private Node last = null;
     /**
      Integer size.
      */
@@ -33,6 +34,7 @@ class LinkedList {
         *Creating a node.
         */
         private Node next;
+
         /**
         *Over ridden constructor.
         *@param inputItem input item.
@@ -53,9 +55,18 @@ class LinkedList {
     *@param item input.
     */
     public void push(final int item) {
-        Node nextAddress = new Node(item);
-        nextAddress.next = first;
-        first = nextAddress;
+        if (last == null) {
+            last = new Node();
+            last.item = item;
+            last.next = null;
+            first = last;
+        }   else {
+            Node temp = last;
+            last = new Node();
+            last.item = item;
+            last.next = null;
+            temp.next = last;
+        }
         size++;
     }
     /**
@@ -76,9 +87,10 @@ class LinkedList {
         return first == null;
     }
     /**
-     * @return size.
+     * @return [description]
      */
-    public int size() {
+
+   public int size() {
     	return size;
     }
     /**

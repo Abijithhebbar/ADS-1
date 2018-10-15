@@ -39,6 +39,15 @@ final class AddLargeNumbers {
         if (list1.size() == list2.size()) {
             result = check.refer(list1, list2);
         }
+        if (list1.size() > list2.size()) {
+            int size = list1.size() - list2.size();
+            result = check.refer(list1, list2, size);
+        }
+        if (list2.size() > list1.size()) {
+            int len = list2.size() - list1.size();
+            int k = list1.size();
+            result = check.refer(list1, list2, len, k);
+        }
     return result;
     }
 }
