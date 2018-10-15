@@ -46,43 +46,54 @@ final class AddLargeNumbers {
             while (!list1.isEmpty()) {
                 while (!list2.isEmpty()) {
                     a = list1.popAtStart() + list2.popAtStart() + b;
-                    c = a % 10;
+                    c = a % ten;
                     result.pushAtStart(c);
-                    b = a / 10;
+                    b = a / ten;
 
                 }
             }
             if (c == 1) {
                 result.pushAtStart(c);
             }
-        } else {
-            if (list1.size() > list2.size()) {
-                int x = 0;
-                check  = list1.size() - list2.size();
-                while (check != 0) {
-                    list2.pushAtEnd(x);
-                }
+        } else if (list1.size() > list2.size()) {
+            int x = 0;
+            check  = list1.size() - list2.size();
+            while (check != 0) {
+                list2.pushAtEnd(x);
             }
-            if (list1.size() < list2.size()) {
-                int x = 0;
-                check  = list2.size() - list1.size();
-                while (check != 0) {
-                    list1.pushAtEnd(x);
-                }
-            }
-        }
-        if (list1.size() == list2.size()) {
-            while (!list1.isEmpty()) {
-                while (!list2.isEmpty()) {
-                    a = list1.popAtStart() + list2.popAtStart() + b;
-                    c = a % 10;
-                    result.pushAtStart(c);
-                    b = a / 10;
+            if (list1.size() == list2.size()) {
+                while (!list1.isEmpty()) {
+                    while (!list2.isEmpty()) {
+                        a = list1.popAtStart() + list2.popAtStart() + b;
+                        c = a % ten;
+                        result.pushAtStart(c);
+                        b = a / ten;
 
+                    }
+                }
+                if (c == 1) {
+                    result.pushAtStart(c);
                 }
             }
-            if (c == 1) {
-                result.pushAtStart(c);
+
+        } else if (list1.size() < list2.size()) {
+            int y = 0;
+            check  = list2.size() - list1.size();
+            while (check != 0) {
+                list1.pushAtEnd(y);
+            }
+            if (list1.size() == list2.size()) {
+                while (!list1.isEmpty()) {
+                    while (!list2.isEmpty()) {
+                        a = list1.popAtStart() + list2.popAtStart() + b;
+                        c = a % ten;
+                        result.pushAtStart(c);
+                        b = b / ten;
+                    }
+                }
+                if (c == 1) {
+                    result.pushAtStart(c);
+                }
             }
         }
         return result;
