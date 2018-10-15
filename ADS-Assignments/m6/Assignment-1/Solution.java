@@ -40,9 +40,10 @@ final class AddLargeNumbers {
     public static LinkedList addLargeNumbers(final LinkedList list1,
      final LinkedList list2) {
         LinkedList result = new LinkedList();
-        int a, c = 0, b = 0, count = 0;
+        int a, c = 0, b = 0, count = 0, check = 0;
         final int ten = 10, nine = 9;
-        while (!list1.isEmpty()) {
+        if (list1.size() == list2.size()) {
+        	while (!list1.isEmpty()) {
         	while (!list2.isEmpty()) {
         		a = list1.pop() + list2.pop() + b;
         		c = a % 10;
@@ -53,6 +54,37 @@ final class AddLargeNumbers {
         }
         if (c == 1) {
         	result.push(c);
+        }
+        }
+        else {
+        	if (list1.size() > list2.size()) {
+        		int x = 0;
+        		check  = list1.size() - list2.size();
+        		while (check != 0) {
+        			list2.pushAtStart(x);
+        		}
+        	}
+        	if (list1.size() < list2.size()) {
+        		int x = 0;
+        		check  = list2.size() - list1.size();
+        		while (check != 0) {
+        			list1.pushAtStart(x);
+        		}
+        	}
+        	if (list1.size() == list2.size()) {
+        	while (!list1.isEmpty()) {
+        	while (!list2.isEmpty()) {
+        		a = list1.pop() + list2.pop() + b;
+        		c = a % 10;
+        		result.push(c);
+        		b = a / 10;
+
+        	}
+        }
+        if (c == 1) {
+        	result.push(c);
+        }
+        }
         }
         return result;
 }
