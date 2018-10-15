@@ -22,7 +22,7 @@ class LinkedList {
 		first = nextAddress;
 		size++;
 	}
-	public int pop() {
+	public int popAtStart() {
 		int output = first.item;
 		first = first.next;
 		size--;
