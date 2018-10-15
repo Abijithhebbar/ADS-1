@@ -63,7 +63,10 @@ final class AddLargeNumbers {
 
 
                 } else {
-                    // a = a + b;
+                    a = a + b;
+                    // if (a > 9) {
+                    // 	a = a % 10;
+                    // }
                     // System.out.print(a);
                     count++;
                     result.push(a);
