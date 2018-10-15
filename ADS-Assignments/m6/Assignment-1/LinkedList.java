@@ -9,14 +9,14 @@ class LinkedList {
 		}
 		int item;
 		Node next;
-		Node(int inputItem) {
+		Node(final int inputItem) {
 			this.item = inputItem;
 		}
 	}
 	public int top() {
 		return first.item;
 	}
-	public void push(int item) {
+	public void push(final int item) {
 		Node nextAddress = new Node(item);
 		nextAddress.next = first;
 		first = nextAddress;

@@ -55,6 +55,7 @@ final class AddLargeNumbers {
             if (c == 1) {
                 result.pushAtStart(c);
             }
+             return result;
         } else if (list1.size() > list2.size()) {
             int x = 0;
             check  = list1.size() - list2.size();
@@ -74,9 +75,10 @@ final class AddLargeNumbers {
                 if (c == 1) {
                     result.pushAtStart(c);
                 }
+                 return result;
             }
 
-        } else if (list1.size() < list2.size()) {
+        } else {
             int y = 0;
             check  = list2.size() - list1.size();
             while (check != 0) {
@@ -94,6 +96,7 @@ final class AddLargeNumbers {
                 if (c == 1) {
                     result.pushAtStart(c);
                 }
+                 return result;
             }
         }
         return result;
