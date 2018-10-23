@@ -499,7 +499,8 @@ public class BST<Key extends Comparable<Key>, Value> {
     /**
      * Returns all keys in the symbol table in the given range,
      * as an {@code Iterable}.
-     *
+     *complexity is bigO(N).
+     *N is the height of the tree.
      * @param  lo minimum endpoint
      * @param  hi maximum endpoint
      * @return all keys in the symbol table between {@code lo}
@@ -523,7 +524,8 @@ public class BST<Key extends Comparable<Key>, Value> {
 
     /**
      * gives the keys of the tree.
-     *
+     *complexity is bigO(N).
+     *N is the height of the tree.
      * @param      x      root node.
      * @param      queue  The queue
      * @param      lo     The lower
@@ -549,7 +551,8 @@ public class BST<Key extends Comparable<Key>, Value> {
 
     /**
      * Returns the number of keys in the symbol table in the given range.
-     *
+     *complexity is bigO(N).
+     *N is the height of the tree.
      * @param  lo minimum endpoint
      * @param  hi maximum endpoint
      * @return the number of keys in the symbol table between {@code lo}
@@ -575,12 +578,23 @@ public class BST<Key extends Comparable<Key>, Value> {
             return rank(hi) - rank(lo);
         }
     }
+    /**
+ *complexity is bigO(N).
+ *N is the height of the tree.
+ * @param key key type.
+ */
      public void delete(Key key) {
         if (key == null) throw new IllegalArgumentException("calls delete() with a null key");
         root = delete(root, key);
         // assert check();
     }
-
+/**
+ *complexity is bigO(N).
+ *N is the height of the tree.
+ * @param x Node type.
+ * @param key key type.
+ * @return Node.
+ */
     private Node delete(Node x, Key key) {
         if (x == null) return null;
 
@@ -600,7 +614,8 @@ public class BST<Key extends Comparable<Key>, Value> {
     }
     /**
      * Removes the smallest key and associated value from the symbol table.
-     *
+     *complexity is bigO(N).
+     *N is the height of the tree.
      * @throws NoSuchElementException if the symbol table is empty
      */
     public void deleteMin() {
@@ -608,7 +623,11 @@ public class BST<Key extends Comparable<Key>, Value> {
         root = deleteMin(root);
         // assert check();
     }
-
+/**
+     * Removes the smallest key and associated value from the symbol table.
+     *complexity is bigO(N).
+     *N is the height of the tree.
+     */
     private Node deleteMin(Node x) {
         if (x.left == null) return x.right;
         x.left = deleteMin(x.left);
@@ -618,7 +637,8 @@ public class BST<Key extends Comparable<Key>, Value> {
 
     /**
      * Removes the largest key and associated value from the symbol table.
-     *
+     *complexity is bigO(N).
+     *N is the height of the tree.
      * @throws NoSuchElementException if the symbol table is empty
      */
     public void deleteMax() {
@@ -626,7 +646,11 @@ public class BST<Key extends Comparable<Key>, Value> {
         root = deleteMax(root);
         // assert check();
     }
-
+/**
+     * Removes the largest key and associated value from the symbol table.
+     *complexity is bigO(N).
+     *N is the height of the tree.
+     */
     private Node deleteMax(Node x) {
         if (x.right == null) return x.left;
         x.right = deleteMax(x.right);
