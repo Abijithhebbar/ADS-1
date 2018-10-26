@@ -29,6 +29,7 @@ public class LinearProbingHashST<Key, Value> {
 
     /**
      * Returns the number of key-value pairs in this symbol table.
+     * Complexity is 1.
      *
      * @return the number of key-value pairs in this symbol table
      */
@@ -38,6 +39,7 @@ public class LinearProbingHashST<Key, Value> {
 
     /**
      * Returns true if this symbol table is empty.
+     * complexity is 1.
      *
      * @return {@code true} if this symbol table is empty;
      *         {@code false} otherwise
@@ -48,7 +50,7 @@ public class LinearProbingHashST<Key, Value> {
 
     /**
      * Returns true if this symbol table contains the specified key.
-     *
+     *Complexity is N.
      * @param  key the key
      * @return {@code true} if this symbol table contains {@code key};
      *         {@code false} otherwise
@@ -60,12 +62,18 @@ public class LinearProbingHashST<Key, Value> {
     }
 
     // hash function for keys - returns value between 0 and M-1
+    /**
+     * Complexity is 1.
+     * @param key key type
+     * @return int.
+     */
     private int hash(Key key) {
         final int eleven = 11;
         return (eleven * key.hashCode() % m);
     }
 
     // resizes the hash table to the given capacity by re-hashing all of the keys
+    // Complexity is 1.
     private void resize(int capacity) {
         LinearProbingHashST<Key, Value> temp = new LinearProbingHashST<Key, Value>(capacity);
         for (int i = 0; i < m; i++) {
@@ -83,7 +91,7 @@ public class LinearProbingHashST<Key, Value> {
      * value with the new value if the symbol table already contains the specified key.
      * Deletes the specified key (and its associated value) from this symbol table
      * if the specified value is {@code null}.
-     *
+     * Complexity is O(constant).
      * @param  key the key
      * @param  val the value
      * @throws IllegalArgumentException if {@code key} is {@code null}
@@ -113,6 +121,7 @@ public class LinearProbingHashST<Key, Value> {
 
     /**
      * Returns the value associated with the specified key.
+     * Complexity is 1.
      * @param key the key
      * @return the value associated with {@code key};
      *         {@code null} if no such value
@@ -129,7 +138,7 @@ public class LinearProbingHashST<Key, Value> {
     /**
      * Removes the specified key and its associated value from this symbol table
      * (if the key is in this symbol table).
-     *
+     *Complexity is Constant.
      * @param  key the key
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
@@ -190,7 +199,7 @@ public class LinearProbingHashST<Key, Value> {
      * Returns all keys in this symbol table as an {@code Iterable}.
      * To iterate over all of the keys in the symbol table named {@code st},
      * use the foreach notation: {@code for (Key key : st.keys())}.
-     *
+     *Complexity is N.
      * @return all keys in this symbol table
      */
     public Iterable<Key> keys() {
@@ -199,7 +208,7 @@ public class LinearProbingHashST<Key, Value> {
             if (keys[i] != null) list.add(keys[i]);
         return list;
     }
-
+// complexity is N.
     public void display(){
         int size = size();
         // System.out.println(size);
