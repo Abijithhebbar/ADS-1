@@ -64,7 +64,7 @@ public class SeparateChainingHashST<Key, Value> {
 
     /**
      * Returns true if this symbol table contains the specified key.
-     *
+     *Complexity is 1.
      * @param  key the key
      * @return {@code true} if this symbol table contains {@code key};
      *         {@code false} otherwise
@@ -77,7 +77,7 @@ public class SeparateChainingHashST<Key, Value> {
 
     /**
      * Returns the value associated with the specified key in this symbol table.
-     *
+     *Complexity is O(constant).
      * @param  key the key
      * @return the value associated with {@code key} in the symbol table;
      *         {@code null} if no such value
@@ -94,7 +94,7 @@ public class SeparateChainingHashST<Key, Value> {
      * value with the new value if the symbol table already contains the specified key.
      * Deletes the specified key (and its associated value) from this symbol table
      * if the specified value is {@code null}.
-     *
+     *Complexity is O(Constant).
      * @param  key the key
      * @param  val the value
      * @throws IllegalArgumentException if {@code key} is {@code null}
@@ -117,7 +117,7 @@ public class SeparateChainingHashST<Key, Value> {
     /**
      * Removes the specified key and its associated value from this symbol table
      * (if the key is in this symbol table).
-     *
+     *Complexity is O(Constant).
      * @param  key the key
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
@@ -131,7 +131,7 @@ public class SeparateChainingHashST<Key, Value> {
         // halve table size if average length of list <= 2
         if (m > INIT_CAPACITY && n <= 2*m) resize(m/2);
     }
-
+// Complexity is N since the it iterates through the queue.
     // return keys in symbol table as an Iterable
     public Iterable<Key> keys() {
         Queue<Key> queue = new Queue<Key>();
