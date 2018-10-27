@@ -10,7 +10,7 @@ Rivest
 Dan
 Abegg
 ----------------------------------------
-########## Testcase 1: Failed ##########
+########## Testcase 1: Passed ##########
 Expected Output: 
 Clark
 Rhian Cahill
@@ -60,8 +60,8 @@ Brian Caffrey
 Your Output: 
 Clark
 Rhian Cahill
-Sasha Cagen
 Cozbi A. Cabrera
+Sasha Cagen
 Rivest
 Access
 Rachel Caine
@@ -104,7 +104,7 @@ Tim Cahill
 Abegg
 Brian Caffrey
 ----------------------------------------
-########## Testcase 2: Failed ##########
+########## Testcase 2: Passed ##########
 Expected Output: 
 Steve Cafferty
 Hank
@@ -221,8 +221,8 @@ Abegg
 Brian Caffrey
 Clark
 Rhian Cahill
-Sasha Cagen
 Cozbi A. Cabrera
+Sasha Cagen
 Rivest
 Steve Cafferty
 Hank
@@ -232,7 +232,7 @@ Neil Cadigan
 Megon
 Meili Cady
 ----------------------------------------
-########## Testcase 3: Failed ##########
+########## Testcase 3: Passed ##########
 Expected Output: 
 Stuart B. MacBride
 Wayne Pacelle
@@ -995,9 +995,9 @@ Joseph A. Maciariello
 David Packard
 Meredith Jaeger
 Rebecca Pacheco
-Scott Palmer
 Pamela Palmer
 Parker J. Palmer
+Scott Palmer
 Nathan Hale
 Pamela Haag
 Bernie Mac
@@ -1289,9 +1289,9 @@ Joseph A. Maciariello
 David Packard
 Meredith Jaeger
 Rebecca Pacheco
-Scott Palmer
 Pamela Palmer
 Parker J. Palmer
+Scott Palmer
 Christopher N. Page
 Ellie Macdonald
 Portia MacIntosh
@@ -1488,9 +1488,9 @@ Joseph A. Maciariello
 David Packard
 Meredith Jaeger
 Rebecca Pacheco
-Scott Palmer
 Pamela Palmer
 Parker J. Palmer
+Scott Palmer
 Nathan Hale
 Pamela Haag
 Bernie Mac
@@ -1614,9 +1614,9 @@ Joseph A. Maciariello
 David Packard
 Meredith Jaeger
 Rebecca Pacheco
-Scott Palmer
 Pamela Palmer
 Parker J. Palmer
+Scott Palmer
 Nathan Hale
 Pamela Haag
 Bernie Mac
