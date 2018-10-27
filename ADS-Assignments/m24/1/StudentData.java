@@ -1,23 +1,23 @@
-/**
- StudentData class
+/**.
+ StudentData class.
  */
 class StudentData {
   /**
    String variable with the name name.
    **/
   private String name;
-/**
- Double variable with the name marks
+/**.
+ Double variable with the name marks.
  */
   private double marks;
   /**
    Constructor.
-   * @param name String type.
-   * @param marks double type.
+   * @param name1 String type.
+   * @param marks1 double type.
    */
-  StudentData(String name, double marks) {
-    this.name = name;
-    this.marks = marks;
+  StudentData(final String name1, final double marks1) {
+    this.name = name1;
+    this.marks = marks1;
   }
   /**
    Complexity is 1.
