@@ -1,19 +1,47 @@
+/**
+ StudentData class
+ */
 class StudentData {
-  private String studentName;
-  private double totalMarks;
+  /**
+   String variable with the name name.
+   **/
+  private String name;
+/**
+ Double variable with the name marks
+ */
+  private double marks;
+  /**
+   Constructor.
+   * @param name String type.
+   * @param marks double type.
+   */
   StudentData(String name, double marks) {
-    this.studentName = name;
-    this.totalMarks = marks;
+    this.name = name;
+    this.marks = marks;
   }
+  /**
+   Complexity is 1.
+   method is used to get the name.
+   * @return name.
+   */
   public String getName() {
-    return this.studentName;
+    return this.name;
   }
+  /**
+   Complexity is 1.
+   method is used to get the marks.
+   * @return marks.
+   */
   public double getMarks() {
-    return this.totalMarks;
+    return this.marks;
   }
+  /**
+   method is used to print the data.
+   * @return output.
+   */
   public String toString() {
     String str = "";
-    str = str + this.studentName + this.totalMarks;
+    str = str + this.name + this.marks;
     return str;
   }
 }
